@@ -9,9 +9,11 @@
 {% block body %}
     <!- Try building a new body here ->
     <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
-        <p>Hello, {{name1}}!</p>
         <div class="col-12">
-            <form action="/stanley/" id="greet" method="POST" >
+            <p>Hello, {{name1}}!</p>
+        </div>
+        <div class="col-12">
+            <form action="/yolanda" id="greet" method="POST" >
                 <label for="name">Type a greeting name?</label>
                 <input name="name" id="name">
                 <input type="submit" value="Greetings!">
@@ -26,4 +28,3 @@
 <!- This is turning off birds background from base.html -->
 {% block background %}
 {% endblock %}
-

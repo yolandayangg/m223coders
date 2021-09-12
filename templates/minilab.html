@@ -9,9 +9,11 @@
 {% block body %}
     <!- Try building a new body here ->
     <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
-        <p>Hello, {{name1}}!</p>
         <div class="col-12">
-            <form action="/stanley/" id="greet" method="POST" >
+            <p>Hello, {{name1}}!</p>
+        </div>
+        <div class="col-12">
+            <form action="/minilab" id="greet" method="POST" >
                 <label for="name">Type a greeting name?</label>
                 <input name="name" id="name">
                 <input type="submit" value="Greetings!">
@@ -21,9 +23,9 @@
             <img src="background.jpg" style="height: 400px" alt="">
         </div>
     </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LWks-W3vpBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
 {% block background %}
 {% endblock %}
-
