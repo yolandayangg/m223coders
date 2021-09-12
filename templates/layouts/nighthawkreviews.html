@@ -1,0 +1,93 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Stubby" %}
+
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <!- Try building a new body here ->
+    <h1>Meet the Creators!</h1>
+    <img width="350" height="250" src= "/static/assets/IMG_0454.JPG">
+
+    <html>
+    <head>
+        <style>
+            h1 {
+                font-size: 2.5em; /* 40px/16=2.5em */
+            }
+            p {
+                font-size: 0.875em; /* 14px/16=0.875em */
+            }
+        </style>
+    </head>
+    <body>
+    <h2>Yolanda</h2>
+    <p>Hi! My name is Yolanda and I am one of the designers for the website you are browsing right now. I go to Del Norte High School, and I'm in the 12th grade. In my free time, I like to spend time with my family and friends, go to the beach or pool, and watch TV. The reason that I wanted to design this website is because over the pandemic, I've read a lot of books and found enjoyment in reading again. The hardest part in reading, I believe, is finding a place to start, so I wanted to create a website that gives readers the opportunity to find a start and find different books of different genres to read.</p>
+    </body>
+    </html>
+
+    <img width="350" height="250" src= "/static/assets/profilepic.png">
+    <html>
+    <head>
+        <style>
+            h1 {
+                font-size: 2.5em; /* 40px/16=2.5em */
+            }
+            p {
+                font-size: 0.875em; /* 14px/16=0.875em */
+            }
+        </style>
+    </head>
+    <body>
+
+    <h2>Tianbin</h2>
+    <p>Insert Description </p>
+    </body>
+    </html>
+
+    <img width="350" height="250" src= "/static/assets/profilepic.png">
+    <html>
+    <head>
+        <style>
+            h1 {
+                font-size: 2.5em; /* 40px/16=2.5em */
+            }
+            p {
+                font-size: 0.875em; /* 14px/16=0.875em */
+            }
+        </style>
+    </head>
+    <body>
+
+    <h2>Stanley</h2>
+    <p>Insert Description </p>
+    </body>
+    </html>
+
+    <img width="350" height="250" src= "/static/assets/profilepic.png">
+    <html>
+    <head>
+        <style>
+            h1 {
+                font-size: 2.5em; /* 40px/16=2.5em */
+            }
+            p {
+                font-size: 0.875em; /* 14px/16=0.875em */
+            }
+        </style>
+    </head>
+    <body>
+
+    <h2>Justin</h2>
+    <p>Insert Description </p>
+    </body>
+    </html>
+
+
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}

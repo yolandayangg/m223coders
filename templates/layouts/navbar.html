@@ -10,12 +10,119 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
         <div class="navbar-nav">
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
             <!-- stub is shown using the name of the route -->
-            <a class="nav-link" href="/yolanda">Yolanda</a>
-            <a class="nav-link" href="/stanley">Stanley</a>
-            <a class="nav-link" href="/tianbin">Tianbin</a>
-            <a class="nav-link" href="/justin">Justin</a>
-            <a class="nav-link" href="/minilab">Minilab</a>
-            <a class="nav-link" href="/binary">Binary</a>
+            <html>
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <style>
+                    body {
+                        font-family: "Courier New", Helvetica, sans-serif;
+                    }
+
+                    .navbar {
+                        overflow: hidden;
+                        background-color: whitesmoke;
+                    }
+
+                    .navbar a {
+                        float: left;
+                        font-size: 16px;
+                        color: black;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+
+                    .dropdown {
+                        float: left;
+                        overflow: hidden;
+                    }
+
+                    .dropdown .dropbtn {
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        color: white;
+                        padding: 14px 16px;
+                        background-color: inherit;
+                        font-family: inherit;
+                        margin: 0;
+                    }
+
+                    .navbar a:hover, .dropdown:hover .dropbtn {
+                        background-color: grey;
+                    }
+
+                    .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        min-width: 160px;
+                        box-shadow: 0 8px 16px 0 rgb(5, 5, 5);
+                        z-index: 1;
+                    }
+
+                    .dropdown-content a {
+                        float: none;
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        text-align: left;
+                    }
+
+                    .dropdown-content a:hover {
+                        background-color: #ddd;
+                    }
+
+                    .dropdown:hover .dropdown-content {
+                        display: block;
+                    }
+                </style>
+            </head>
+            <body>
+
+            <div class="navbar">
+                <a href="/popularnow">Popular Now</a>
+                <a href="/nighthawkreviews">Reviews From Nighthawks</a>
+                <a href="/tianbin">Tianbin</a>
+                <a href="/justin">Justin</a>
+                <a href="/aboutus">About Us</a>
+                <div class="dropdown">
+                    <button class="dropdown">Resources
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/concepts">Concepts</a>
+                        <a href="/binary">Binary</a>
+                    </div>
+                </div>
+            </div>
+
+            </body>
+            </html>
+
         </div>
     </div>
 </nav>
+
+</html>
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+</script>
+</body>
+</html>
