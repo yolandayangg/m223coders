@@ -1,3 +1,5 @@
+<h1>Week 3 Progress</h1>
+
 P3 M223-Coders Yolanda Yang, Stanley Yan, Tianbin Liu, Justin Lemay
 
 [Insights](https://github.com/yolandayangg/flask_portfolio/pulse) [Activity](https://github.com/yolandayangg/flask_portfolio/graphs/contributors)
