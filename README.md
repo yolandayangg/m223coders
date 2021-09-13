@@ -2,8 +2,28 @@
 <h2>P3 M223-Coders Yolanda Yang, Stanley Yan, Tianbin Liu, Justin Lemay</h2>
 General focus: this week our group focused on forming our website and bring our wireframe to life. We also learned about binary and took individual notes on the subject
 <h3>Table of Contents</h3>
-[Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1)
 
+[1. Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1)
+
+[2. Binary notes-Justin](https://docs.google.com/document/d/1-CbXjcedDSxMuHECOvv7dvF_tcjbSF0LtGk_NMxmy2w/edit?usp=sharing)
+
+[3. Binary notes-Tianbin](https://docs.google.com/document/d/1eOz0QMawSIe8ViSo3b6fR6LdZRAmMDKshRM_cRA0Ch4/edit?usp=sharing)
+
+[4. Binary notes-Stanley](https://docs.google.com/document/d/1iLSGaSGQ2lFVq5InfgJbE6u6p0w_IpodkqXK8_BVClI/edit?usp=sharing)
+
+[5. Binary notes-Yolanda](https://docs.google.com/document/d/10EvycQrFUT_EgIYDN1qOvUQcC0J9ivYZeZfBbqQlH-o/edit)
+
+[6. Pair share journal-Yolanda, Stanley and Tianbin](https://docs.google.com/document/d/1VqkTr3uP8m7yMC01Ngiqay7hRKexQC2j_Ss2TpSUAMQ/edit?usp=sharing)
+
+[7. Add embeds to Mini-lab](https://docs.google.com/document/d/1eE11L1Vy0nhxrb4YIrCC5imIb0umu5kk6l8RaLtMvm0/edit?usp=sharing)
+
+[8. Experience with new fonts and change in background on website](https://docs.google.com/document/d/1VoR2FoKcQ-V2-_2a8CHSH63jsIos7X1ZwBPg_q_nHWc/edit?usp=sharing)
+
+[9. About us page](https://docs.google.com/document/d/1Gnbe_61fB5rIWX7CnO3ThnzWt1H8baLBn5Kw10gcszM/edit?usp=sharing)
+
+
+
+<h1>Pop quiz 9/10</h1>
 
 [Insights](https://github.com/yolandayangg/flask_portfolio/pulse) [Activity](https://github.com/yolandayangg/flask_portfolio/graphs/contributors)
 
