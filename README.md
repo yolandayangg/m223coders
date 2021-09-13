@@ -25,6 +25,8 @@ General focus: this week our group focused on forming our website and bring our 
 
 [11. Issues](https://github.com/yolandayangg/flask_portfolio/issues)
 
+[12. Hach-a-thon result](https://docs.google.com/document/d/1_o4TIlL21LoMUcV1deqd00JlxIpRclqYtaqQ0vE9l9U/edit?usp=sharing)
+
 
 
 <h1>Pop quiz 9/10</h1>
