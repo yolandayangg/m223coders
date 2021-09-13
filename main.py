@@ -15,33 +15,7 @@ def index():
 def binary():
     return render_template("layouts/binary.html")
 
-# connects /kangaroos path to render nighthawkreviews.html
-
-@app.route('/tianbin/', methods=['GET', 'POST'])
-def tianbin():
-    # submit button has been pushed
-    print("1")
-    if request.form:
-        print("2")
-        name = request.form.get("name")
-        if len(name) != 0:  # input field has content
-            print("3")
-            return render_template("layouts/tianbin.html", name1=name)
-    # starting and empty input default
-    return render_template("layouts/tianbin.html", name1="World")
-
-@app.route('/justin/', methods=['GET', 'POST'])
-def justin():
-    # submit button has been pushed
-    print("1")
-    if request.form:
-        print("2")
-        name = request.form.get("name")
-        if len(name) != 0:  # input field has content
-            print("3")
-            return render_template("layouts/justin.html", name1=name)
-    # starting and empty input default
-    return render_template("layouts/justin.html", name1="World")
+# connects /kangaroos path to render reviews.html
 
 @app.route('/concepts/', methods=['GET', 'POST'])
 def concepts():
@@ -73,9 +47,17 @@ def aboutus():
 def popularnow():
     return render_template("layouts/popularnow.html")
 
-@app.route('/nighthawkreviews/', methods=['GET', 'POST'])
-def nighthawkreviews():
-    return render_template("layouts/nighthawkreviews.html")
+@app.route('/reviews/', methods=['GET', 'POST'])
+def reviews():
+    return render_template("layouts/reviews.html")
+
+@app.route('/questions/', methods=['GET', 'POST'])
+def questions():
+    return render_template("layouts/questions.html")
+
+@app.route('/discussion/', methods=['GET', 'POST'])
+def discussion():
+    return render_template("layouts/discussion.html")
 
 
 # runs the application on the development server

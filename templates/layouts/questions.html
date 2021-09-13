@@ -1,0 +1,47 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Stubby" %}
+
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <!- Try building a new body here ->
+
+    <img width="247" height="204" src= "/static/assets/question.jpeg">
+
+    <html>
+    <head>
+        <style>
+            h1 {
+                font-size: 2.5em; /* 40px/16=2.5em */
+            }
+            p {
+                font-size: 0.875em; /* 14px/16=0.875em */
+            }
+        </style>
+    </head>
+    <body>
+
+    <h2>Inquiries</h2>
+    <h4>Anything on the website that is unclear or confusing? Send us a question! We will try to get back to you within 48 hours. Thanks for your patience!</h4>
+    </body>
+    </html>
+    <html>
+    <body>
+
+    <form>
+        <label for="fname">Email:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Question:</label><br>
+        <input type="text" id="lname" name="lname" value="">
+        <input type="submit" value="Submit">
+    </form>
+    </body>
+    </html>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}

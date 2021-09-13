@@ -1,0 +1,38 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Stubby" %}
+
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <!- Try building a new body here ->
+
+    <html>
+    <head>
+        <style>
+            h1 {
+                font-size: 2.5em; /* 40px/16=2.5em */
+            }
+            p {
+                font-size: 0.875em; /* 14px/16=0.875em */
+            }
+        </style>
+    </head>
+    </html>
+    <html>
+    <body>
+
+    <form action="/action_page.php">
+        <label for="fname">Book Title:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <input type="submit" value="Submit">
+    </form>
+    </body>
+    </html>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
