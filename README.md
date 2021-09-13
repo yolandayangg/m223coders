@@ -21,6 +21,10 @@ General focus: this week our group focused on forming our website and bring our 
 
 [9. About us page](https://docs.google.com/document/d/1Gnbe_61fB5rIWX7CnO3ThnzWt1H8baLBn5Kw10gcszM/edit?usp=sharing)
 
+[10. Short presentation to sum up everything](https://docs.google.com/presentation/d/15UAxlS4eykzJeev10kHJHD6x4jU0gahcmKgiZHbLNX8/edit?usp=sharing)
+
+[11. Issues](https://github.com/yolandayangg/flask_portfolio/issues)
+
 
 
 <h1>Pop quiz 9/10</h1>
