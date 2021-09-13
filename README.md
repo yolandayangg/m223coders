@@ -1,6 +1,9 @@
 <h1>Week 3 Progress</h1>
+<h2>P3 M223-Coders Yolanda Yang, Stanley Yan, Tianbin Liu, Justin Lemay</h2>
+General focus: this week our group focused on forming our website and bring our wireframe to life. We also learned about binary and took individual notes on the subject
+<h3>Table of Contents</h3>
+[Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1)
 
-P3 M223-Coders Yolanda Yang, Stanley Yan, Tianbin Liu, Justin Lemay
 
 [Insights](https://github.com/yolandayangg/flask_portfolio/pulse) [Activity](https://github.com/yolandayangg/flask_portfolio/graphs/contributors)
 
