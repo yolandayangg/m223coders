@@ -1,0 +1,32 @@
+<!-- Navigation Bar from bootstrap
+This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
+-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://csp.nighthawkcodingsociety.com/"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
+            <a class="nav-link" href=/>Portfolio</a>
+            <a class="nav-link" href=/popularnow/>Popular Now</a>
+            <a class="nav-link" href=/discussion/>Discuss With Us</a>
+            <a class="nav-link" href=/reviews/>Reviews From Others</a>
+            <a class="nav-link" href=/questions/>Questions?</a>
+            <!-- stub is shown using the name of the route -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarModel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Concepts
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/yolanda">Yolanda</a>
+                    <a class="dropdown-item" href="/stanley">Stanley</a>
+                    <a class="dropdown-item" href="/tianbin">Tianbin</a>
+                    <a class="dropdown-item" href="/justin">Justin</a>
+                    <a class="dropdown-item" href="/binary">Binary</a>
+                </div>
+            </li>
+        </div>
+    </div>
+</nav>
