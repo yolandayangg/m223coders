@@ -68,9 +68,9 @@ def stanley():
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
             print("3")
-            return render_template("layouts/yolanda.html", name1=name)
+            return render_template("layouts/stanley.html", name1=name)
     # starting and empty input default
-    return render_template("layouts/yolanda.html", name1="World")
+    return render_template("layouts/stanley.html", name1="World")
 
 @app.route('/tianbin/', methods=['GET', 'POST'])
 def tianbin():
@@ -81,9 +81,9 @@ def tianbin():
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
             print("3")
-            return render_template("layouts/yolanda.html", name1=name)
+            return render_template("layouts/tianbin.html", name1=name)
     # starting and empty input default
-    return render_template("layouts/yolanda.html", name1="World")
+    return render_template("layouts/tianbin.html", name1="World")
 
 @app.route('/justin/', methods=['GET', 'POST'])
 def justin():
@@ -94,9 +94,9 @@ def justin():
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
             print("3")
-            return render_template("layouts/yolanda.html", name1=name)
+            return render_template("layouts/justin.html", name1=name)
     # starting and empty input default
-    return render_template("layouts/yolanda.html", name1="World")
+    return render_template("layouts/justin.html", name1="World")
 
 # runs the application on the development server
 if __name__ == "__main__":
