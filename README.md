@@ -20,7 +20,7 @@ General focus: this week our group focused on forming our website and bring our 
 <h3>Self Grades + explanations</h3>
 Yolanda-
 
-Tianbin-
+Tianbin-self grades for me: 1.5 /2, because i have problem about the update program this week, and It waste my time to try to fix it, and I only did the background and other things, so I think I can get 75 percent of the self grades(1.5)
 
 Justin-
 
