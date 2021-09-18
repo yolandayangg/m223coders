@@ -17,11 +17,12 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
 
 <h1>Week 4 Progress</h1>
 General focus: this week our group focused on forming our website and bring our wireframe to life. We also learned about binary and took individual notes on the subject
+
+[2 Minute Video](https://www.youtube.com/watch?v=i4MmoiRzv40)
+
 <h3>Self Grades + explanations</h3>
 
-[2 Minute Video]
-
-Yolanda-
+Yolanda- 2/2; this week, instead of solely focusing on coding, I shifted my attention to helping my teammates understand our agenda. Stanley and Tianbin simply needed me to assist them with what to do and my expectations, while Justin needed a little bit more help with understanding how the code works and catching up by watching some videos on CB. While doing that, I was also the person who updated the readme with necessary content, added new issues to the scrum board and provided tangibles for all of them, and I did coding for the website (fixing nav bar, implementing new fonts, adding ASCII to binary, starting on RBG)
 
 Tianbin-self grades for me: 1.5 /2, because i have problem about the update program this week, and It waste my time to try to fix it, and I only did the background and other things, so I think I can get 75 percent of the self grades(1.5)
 
