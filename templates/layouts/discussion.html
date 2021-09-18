@@ -19,12 +19,18 @@
                 <input type="submit" value="Greetings!">
             </form>
         </div>
-        <div class="col-12">
-            <img src="background.jpg" style="height: 400px" alt="">
-        </div>
+
     </div>
 {% endblock %}
-
 <!- This is turning off birds background from base.html -->
 {% block background %}
+<style>
+    body {
+        background-image: repeating-linear-gradient(to bottom right,cornflowerblue,whitesmoke, darkgray);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+
 {% endblock %}

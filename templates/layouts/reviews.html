@@ -6,32 +6,63 @@
 
 
 <!- This is a replacement block for Body in base.html -->
-{% block body %}
-    <!- Try building a new body here ->
 
-    <html>
-    <head>
-        <style>
-            h1 {
-                font-size: 2.5em; /* 40px/16=2.5em */
-            }
-            p {
-                font-size: 0.875em; /* 14px/16=0.875em */
-            }
-        </style>
-    </head>
-    </html>
-    <html>
-    <body>
+<!- Try building a new body here ->
 
-    <form action="/action_page.php">
-        <label for="fname">Book Title:</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <input type="submit" value="Submit">
-    </form>
-    </body>
-    </html>
+
+{% block style %}
+  <style>
+    h1 {
+      font-size: 2.5em; /* 40px/16=2.5em */
+    }
+    p {
+      font-size: 0.875em; /* 14px/16=0.875em */
+    }
+    #video_wrapper
+    {
+      margin:0;
+      padding:0;
+    }
+    #video_wrapper video
+    {
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    #wrapper
+    {
+      position:relative;
+      text-align:center;
+      margin:0 auto;
+      padding:0;
+      color:white;
+      font-size:45px;
+      background-color: rgba(112, 112, 112, 0.74);
+    }
+  </style>
 {% endblock %}
+
+
+
+{% block body %}
+<div id="video_wrapper">
+
+  <video autoplay muted loop>
+    <source src="/static/assets/output.mp4" type="video/mp4">
+  </video>
+
+  <div id="wrapper">
+    <form action="/action_page.php">
+      <label for="fname">Book Title:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</div>
+
+{% endblock %}
+
 
 <!- This is turning off birds background from base.html -->
 {% block background %}

@@ -9,7 +9,7 @@
 {% block body %}
     <!- Try building a new body here ->
     <h1>Meet the Creators!</h1>
-    <img width="350" height="250" src= "/static/assets/IMG_0454.JPG">
+    <img width="350" height="250" src= "/static/assets/IMG_0454.JPG" alt="">
 
     <html>
     <head>
@@ -90,5 +90,12 @@
 
 <!- This is turning off birds background from base.html -->
 {% block background %}
+<style>
+    body {
+        background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
 {% endblock %}
 
