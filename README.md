@@ -18,6 +18,9 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
 <h1>Week 4 Progress</h1>
 General focus: this week our group focused on forming our website and bring our wireframe to life. We also learned about binary and took individual notes on the subject
 <h3>Self Grades + explanations</h3>
+
+[2 Minute Video]
+
 Yolanda-
 
 Tianbin-self grades for me: 1.5 /2, because i have problem about the update program this week, and It waste my time to try to fix it, and I only did the background and other things, so I think I can get 75 percent of the self grades(1.5)
@@ -26,6 +29,19 @@ Justin-
 
 Stanley-
 <h3>Table of Contents</h3>
+
+[1. Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1)
+
+[2. Drop Down Menu=fixed](https://github.com/yolandayangg/flask_portfolio/issues/30)
+
+[3. Add ASCII to binary](https://github.com/yolandayangg/flask_portfolio/issues/34)
+
+[4. Questions page- link email so it works](https://github.com/yolandayangg/flask_portfolio/issues/24)
+
+[5. Wire Frame ideas for discuss with us page](https://docs.google.com/drawings/d/1Sp0YN99QvGS2AanVSLYb9-U9Q9XCanWRzjxUPoNbzPY/edit?usp=sharing) 
+
+[6. TPT 4 Group Notes](https://docs.google.com/document/d/1zeBIflt-fmx4ESYYfs3T0tMNLCM3c_Shx7uDU78FRkE/edit?usp=sharing)
+
 <h1>Week 3 Progress</h1>
 General focus:This week each member of our team worked on individual parts of the website. We made changes to the website and made parts that didn't work function like we had planned.
 <h3>Table of Contents</h3>
