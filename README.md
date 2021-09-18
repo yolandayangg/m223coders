@@ -43,6 +43,8 @@ Stanley-self grade; 1.5/2, because I started off the week by completing Popular 
 
 [6. TPT 4 Group Notes](https://docs.google.com/document/d/1zeBIflt-fmx4ESYYfs3T0tMNLCM3c_Shx7uDU78FRkE/edit?usp=sharing)
 
+[7. Video to show prototyping of website](https://github.com/yolandayangg/flask_portfolio/issues/25)
+
 <h1>Week 3 Progress</h1>
 General focus:This week each member of our team worked on individual parts of the website. We made changes to the website and made parts that didn't work function like we had planned.
 <h3>Table of Contents</h3>
@@ -69,5 +71,5 @@ General focus:This week each member of our team worked on individual parts of th
 
 [11. Issues](https://github.com/yolandayangg/flask_portfolio/issues)
 
-[12. Hach-a-thon result](https://docs.google.com/document/d/1_o4TIlL21LoMUcV1deqd00JlxIpRclqYtaqQ0vE9l9U/edit?usp=sharing)
+[12. Hack-a-thon result](https://docs.google.com/document/d/1_o4TIlL21LoMUcV1deqd00JlxIpRclqYtaqQ0vE9l9U/edit?usp=sharing)
 
