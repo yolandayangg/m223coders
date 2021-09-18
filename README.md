@@ -14,6 +14,14 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
 
 <h1>Week 4 Progress</h1>
 General focus: this week our group focused on forming our website and bring our wireframe to life. We also learned about binary and took individual notes on the subject
+<h3>Self Grades + explanations</h3>
+Yolanda-
+
+Tianbin-
+
+Justin-
+
+Stanley-
 <h3>Table of Contents</h3>
 <h1>Week 3 Progress</h1>
 General focus:This week each member of our team worked on individual parts of the website. We made changes to the website and made parts that didn't work function like we had planned.
