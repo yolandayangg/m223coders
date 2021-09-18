@@ -27,7 +27,7 @@ Tianbin-self grades for me: 1.5 /2, because i have problem about the update prog
 
 Justin-
 
-Stanley-self grade; 1.5/2, because I started off the week by completing discuss tab, but toward sthe end of the week I had a lot of trouble with getting my greet code to work. I probably shuold have moved on to other tasks, rather sthan staying stuck on something i had trouble with.
+Stanley-self grade; 1.5/2, because I started off the week by completing Popular Now tab, but toward sthe end of the week I had a lot of trouble with getting my greet code to work. I probably shuold have moved on to other tasks, rather sthan staying stuck on something i had trouble with.
 <h3>Table of Contents</h3>
 
 [1. Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1)
