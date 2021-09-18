@@ -26,9 +26,14 @@ Yolanda- 2/2; this week, instead of solely focusing on coding, I shifted my atte
 
 Tianbin-self grades for me: 1.5 /2, because i have problem about the update program this week, and It waste my time to try to fix it, and I only did the background and other things, so I think I can get 75 percent of the self grades(1.5)
 
-Justin-
+(Comment by Yolanda); personally, I think Tianbin deserves a 1.75-2/2. Tianbin did have some problems with his programs, but I liked that he took initiative and asked Mr. M for help. Also, Tianbin was actively trying to perfect the code in what I wanted him to do. In the beginning of the week, we were having some trouble with the background colors. Tianbin has figured out how to extend the background color to the whole page, and is planning on changing different pages to different colors in the next week.
+
+Justin- (comment by Yolanda, Justin is currently camping) 1.75/2; Justin is still somewhat behind, but I can see that he has made efforts this week to catch up and get some work done. First, he participated in TPT and watching the collegeboard videos, which means he has some knowledge going into coding. I hope he can apply what he learns to our project and be a valuable team member. Justing also took the initiative to meet with Mr. M to catch up with his code on IntelliJ and kindly asked about ASCII for the rest of the group. Overall, it seems that Justin is trending in the right direction, and hopefully in a week or two he will seamlessly transition into the core work of the group.
 
 Stanley-self grade; 1.5/2, because I started off the week by completing Popular Now tab, but toward sthe end of the week I had a lot of trouble with getting my greet code to work. I probably shuold have moved on to other tasks, rather than staying stuck on something I had trouble with.
+
+(Comment by Yolanda); I do agree with the score that Stanley has given himself. While I acknowledge that he could've moved on to other tasks, I wished that he could ask for help from either our cross-over team or another knowledgeable student in the classroom. I also wished that Stanley could be more active in trying to get a "groove" to the website. We really wanted our page to resemble a search engine, and I wished that he had done more research to get to his goals.
+
 <h3>Table of Contents</h3>
 
 [1. Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1)
