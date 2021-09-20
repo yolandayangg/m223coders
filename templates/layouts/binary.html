@@ -43,7 +43,6 @@
              DOM assignment by converting decimal https://www.w3schools.com/jsref/jsref_fromcharcode.asplook
              below ASCII for more ideas of where to make changes
              */
-            document.getElementById('ascii').innerHTML = String.fromCharCode(parseInt(binary, 2))
         }
 
         // algorithm to convert decimal to base using division and remainder
@@ -128,7 +127,6 @@
                         <th>Hexadecimal</th>
                         <th>Decimal</th>
                         <!-- Hack: display ASCII label for printable character(s)  -->
-                        <th>ASCII</th>
                         <th>Minus</th>
                     </tr>
                     <tr>
@@ -137,7 +135,6 @@
                         <td id="octal">0</td>
                         <td id="hexadecimal">0</td>
                         <td id="decimal">0</td>
-                        <td id="ascii">null</td>
                         <!-- Hack: display ASCII printable character(s)  -->
                         <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
 
@@ -168,5 +165,12 @@
 {% endblock %}
 
 {% block background %}
+<style>
+    body {
+        background-image: repeating-linear-gradient(to bottom right, black, sandybrown, green, rgb(255, 122, 89));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
 {% endblock %}
 

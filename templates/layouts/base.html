@@ -20,6 +20,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    {% block style %}
     <style>
         :root{
             --white: whitesmoke;
@@ -34,10 +35,6 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
             -moz-animation: fadein 2s; /* Firefox */
             -webkit-animation: fadein 2s; /* Safari and Chrome */
             -o-animation: fadein 2s; /* Opera */
-            background-image: repeating-linear-gradient(to bottom right, saddlebrown, sandybrown, tan, rgb(255, 122, 89));
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
             color: var(--white);
         }
 
@@ -105,6 +102,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
         }
 
     </style>
+    {% endblock %}
 
     <title>{{ basename }} | {{ project }} </title>
     {% block meta %}
@@ -154,7 +152,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 {% endblock %}
 
 </body>
-
+</html>
 {% block background %}
     </script>
     <html>
