@@ -45,11 +45,14 @@
 
 
 {% block body %}
+
 <div id="video_wrapper">
 
   <video autoplay muted loop>
     <source src="/static/assets/output.mp4" type="video/mp4">
   </video>
+
+  {% include "layouts/navbar1.html" %}
 
   <div id="wrapper">
     <form action="/action_page.php">
