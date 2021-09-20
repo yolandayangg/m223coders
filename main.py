@@ -59,6 +59,10 @@ def questions():
 def discussion():
     return render_template("layouts/discussion.html")
 
+@app.route('/rgb/', methods=['GET', 'POST'])
+def rgb():
+    return render_template("layouts/rgb.html")
+
 @app.route('/stanley/', methods=['GET', 'POST'])
 def stanley():
     # submit button has been pushed
