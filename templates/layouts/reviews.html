@@ -1,6 +1,4 @@
 <!-- Extending the predefined project layout -->
-{% extends "layouts/base.html" %}
-
 <!- This variable sets name of browser tab  -->
 {% set project = "Stubby" %}
 
@@ -9,7 +7,7 @@
 
 <!- Try building a new body here ->
 
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 {% block style %}
   <style>
     h1 {
@@ -18,11 +16,7 @@
     p {
       font-size: 0.875em; /* 14px/16=0.875em */
     }
-    #video_wrapper
-    {
-      margin:0;
-      padding:0;
-    }
+
     #video_wrapper video
     {
       position: fixed;
@@ -43,7 +37,6 @@
 {% endblock %}
 
 
-
 {% block body %}
 
 <div id="video_wrapper">
@@ -53,7 +46,6 @@
   </video>
 
   {% include "layouts/navbar1.html" %}
-
   <div id="wrapper">
     <form action="/action_page.php">
       <label for="fname">Book Title:</label><br>
@@ -61,7 +53,6 @@
       <input type="submit" value="Submit">
     </form>
   </div>
-
 </div>
 
 {% endblock %}
