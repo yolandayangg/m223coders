@@ -15,6 +15,10 @@ Stanley Yan (user Stanley Yan) [Tasks](https://github.com/yolandayangg/flask_por
 
 Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/flask_portfolio/issues) [Commits](https://github.com/yolandayangg/flask_portfolio/commits?author=TheRadRabbidRabbit) [Profile](https://github.com/TheRadRabbidRabbit) [Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1?card_filter_query=assignee%3Atheradrabbidrabbit)
 
+<h1>Week 5 Progress</h1>
+General focus: RGB, test prep (3.1-3.4), base2/base8/base16/64
+
+<h3>Table of Contents<h3/>
 <h1>Week 4 Progress</h1>
 General focus: this week our group focused on forming our website and bring our wireframe to life. We also learned about binary and took individual notes on the subject
 
