@@ -63,7 +63,7 @@ def discussion():
 def rgb():
     return render_template("layouts/rgb.html")
 
-@app.route('/stanley', methods=['GET', 'POST'])
+@app.route('/stanley/', methods=['GET', 'POST'])
 def stanley():
     # submit button has been pushed
     print("1")
@@ -89,7 +89,7 @@ def tianbin():
     # starting and empty input default
     return render_template("layouts/tianbin.html", name1="World")
 
-@app.route('/justin', methods=['GET', 'POST'])
+@app.route('/justin/', methods=['GET', 'POST'])
 def justin():
     # submit button has been pushed
     print("1")

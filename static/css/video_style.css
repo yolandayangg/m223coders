@@ -1,0 +1,16 @@
+#video_wrapper video
+{
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+#wrapper
+{
+    position:relative;
+    text-align:center;
+    margin:0 auto;
+    padding:0;
+    color:white;
+    font-size:45px;
+    background-color: rgba(112, 112, 112, 0.74);
+}
