@@ -5,9 +5,9 @@
 
 [Activity](https://github.com/yolandayangg/flask_portfolio/graphs/contributors)
 
-[Pair share journal - Stanley and Yolanda](https://docs.google.com/document/d/1VqkTr3uP8m7yMC01Ngiqay7hRKexQC2j_Ss2TpSUAMQ/edit?usp=sharing)
+[Pair share journal-Stanley and Yolanda](https://docs.google.com/document/d/1VqkTr3uP8m7yMC01Ngiqay7hRKexQC2j_Ss2TpSUAMQ/edit?usp=sharing) 
 
-[Pair share journal - Justin and Tianbin](https://docs.google.com/document/d/1jXt1_mOIhUU3PqdA9ylZIMYBEAuJzhF5u4mN17iYH-0/edit?usp=sharing)
+[Pair share journal- Tianbin and Justin](https://docs.google.com/document/d/1jXt1_mOIhUU3PqdA9ylZIMYBEAuJzhF5u4mN17iYH-0/edit?usp=sharing)
 
 Yolanda Yang (user yolandayangg) [Tasks](https://github.com/yolandayangg/flask_portfolio/issues) [Commits](https://github.com/yolandayangg/flask_portfolio/commits?author=yolandayangg) [Profile](https://github.com/yolandayangg) [Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1?card_filter_query=assignee%3A+assignee%3A)
 
@@ -34,6 +34,14 @@ General focus: RGB, test prep (3.1-3.4), base2/base8/base16/64
 [2. Website runtime](https://github.com/yolandayangg/flask_portfolio/issues/25)
 
 [3. Week 4 live grade comments](https://github.com/yolandayangg/flask_portfolio/issues/33) 
+
+[4. Assigned Tickets Yolanda](https://github.com/yolandayangg/flask_portfolio/issues/assigned/yolandayangg)
+
+[5. Assigned Tickets Stanley](https://github.com/yolandayangg/flask_portfolio/issues/assigned/Stanleyy03840)
+
+[6. Assigned Tickets Tianbin](https://github.com/yolandayangg/flask_portfolio/issues/assigned/TianbinLiu)
+
+[7. Assigned Tickets Justin](https://github.com/yolandayangg/flask_portfolio/issues/assigned/TheRadRabbidRabbit)
 <h3>Table of Contents<h3/>
 <h1>Week 4 Progress</h1>
 General focus: this week our group focused on forming our website and bring our wireframe to life. We also learned about binary and took individual notes on the subject
