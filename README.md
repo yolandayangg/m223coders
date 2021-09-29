@@ -30,6 +30,8 @@ General focus: RGB, test prep (3.1-3.4), base2/base8/base16/64
 [1. 3.1 and 3.2 notes/quizzes](https://github.com/yolandayangg/flask_portfolio/issues/41)
 
 [2. Website runtime](https://github.com/yolandayangg/flask_portfolio/issues/25)
+
+[3. Week 4 live grade comments](https://github.com/yolandayangg/flask_portfolio/issues/33) 
 <h3>Table of Contents<h3/>
 <h1>Week 4 Progress</h1>
 General focus: this week our group focused on forming our website and bring our wireframe to life. We also learned about binary and took individual notes on the subject
