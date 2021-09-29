@@ -5,7 +5,8 @@
 
 [Activity](https://github.com/yolandayangg/flask_portfolio/graphs/contributors)
 
-[Pair share journal - Stanley and Yolanda](https://docs.google.com/document/d/1VqkTr3uP8m7yMC01Ngiqay7hRKexQC2j_Ss2TpSUAMQ/edit?usp=sharing) 
+[Pair share journal - Stanley and Yolanda](https://docs.google.com/document/d/1VqkTr3uP8m7yMC01Ngiqay7hRKexQC2j_Ss2TpSUAMQ/edit?usp=sharing)
+
 [Pair share journal - Justin and Tianbin](https://docs.google.com/document/d/1jXt1_mOIhUU3PqdA9ylZIMYBEAuJzhF5u4mN17iYH-0/edit?usp=sharing)
 
 Yolanda Yang (user yolandayangg) [Tasks](https://github.com/yolandayangg/flask_portfolio/issues) [Commits](https://github.com/yolandayangg/flask_portfolio/commits?author=yolandayangg) [Profile](https://github.com/yolandayangg) [Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1?card_filter_query=assignee%3A+assignee%3A)
