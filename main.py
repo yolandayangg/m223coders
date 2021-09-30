@@ -1,3 +1,5 @@
+from pathlib import Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
+
 # import "packages" from flask
 from flask import Flask, render_template, request
 
@@ -13,11 +15,18 @@ def index():
 # connects default URL to render index.html
 @app.route('/binary/')
 def binary():
-    return render_template("layouts/binary.html")
+    if request.method == "POST":
+        if request.form:
+            bitNumber = request.form.get("bits")
+            if len(bitNumber) != 0:
+                return render_template("layouts/binary.html", BITS=int(bitNumber), imageOn="/static/assets/exciteddog.jpeg", imageOff="/static/assets/sleepingdog.jpeg")
+        if request.form["bits2"]:
+            return render_template("layouts/binary.html", BITS=8, imageOn="/static/assets/exciteddog.jpeg", imageOff="/static/assets/sleepingdog.jpeg")
+    return render_template("layouts/binary.html", BITS=8, imageOn="/static/assets/exciteddog.jpeg", imageOff="/static/assets/sleepingdog.jpeg")
 
 # connects /kangaroos path to render reviews.html
 
-@app.route('/yolanda/', methods=['GET', 'POST'])
+@app.route('/yolanda', methods=['GET', 'POST'])
 def yolanda():
     # submit button has been pushed
     print("1")

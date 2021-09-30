@@ -1,288 +1,104 @@
-from PIL import Image, ImageFilter, ImageDraw, ImageFont, ImageColor
-
-#Import all the enhancement filter from pillow
-
-from PIL.ImageFilter import (
-    BLUR, CONTOUR, DETAIL, EDGE_ENHANCE, EDGE_ENHANCE_MORE,
-    EMBOSS, FIND_EDGES, SMOOTH, SHARPEN
-)
-
-#Using Image Module
-#Open image using Image module
-im = Image.open("static/assets/mountain.jpeg")
-#Show actual Image
-im.show()
-#Show rotated Image
-im = im.rotate(45)
-im.show()
-
-#Working with Images
-image = Image.open('static/assets/mountain.jpeg')
-image.show()
-image.save('beach1.bmp')
-image1 = Image.open('beach1.bmp')
-image1.show()
-
-#Flip and Rotate Images
-# Open an already existing image
-imageObject = Image.open("static/assets/mountain.jpeg")
-# Do a flip of left and right
-hori_flippedImage = imageObject.transpose(Image.FLIP_LEFT_RIGHT)
-# Show the original image
-imageObject.show()
-# Show the horizontal flipped image
-hori_flippedImage.show()
-
-# Open an already existing image
-imageObject = Image.open("static/assets/mountain.jpeg")
-
-# Do a flip of left and right
-hori_flippedImage = imageObject.transpose(Image.FLIP_LEFT_RIGHT)
-
-# Show the original image
-imageObject.show()
-
-# Show vertically flipped image
-Vert_flippedImage = imageObject.transpose(Image.FLIP_TOP_BOTTOM)
-Vert_flippedImage.show()
+from PIL import Image, ImageDraw
+import numpy
+import base64
+from io import BytesIO
+from pathlib import Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
 
 
-#Resizing an Image
-#Create an Image Object from an Image
-im = Image.open("static/assets/mountain.jpeg")
-#Display actual image
-im.show()
-#Make the new image half the width and half the height of the original image
-resized_im = im.resize((round(im.size[0]*0.5), round(im.size[1]*0.5)))
-#Display the resized imaged
-resized_im.show()
-#Save the cropped image
-resized_im.save('resizedBeach1.jpg')
+# image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
+def image_base64(img, img_type):
+    with BytesIO() as buffer:
+        img.save(buffer, img_type)
+        return base64.b64encode(buffer.getvalue()).decode()
 
 
-#Creating a Watermark
-#Create an Image Object from an Image
-im = Image.open('static/assets/mountain.jpeg')
-width, height = im.size
-draw = ImageDraw.Draw(im)
-text = "sample watermark"
-font = ImageFont.truetype('arial.ttf', 36)
-textwidth, textheight = draw.textsize(text, font)
-# calculate the x,y coordinates of the text
-margin = 10
-x = width - textwidth - margin
-y = height - textheight - margin
-# draw watermark in the bottom right corner
-draw.text((x, y), text, font=font)
-im.show()
-#Save watermarked image
-im.save('images/watermark.jpg')
+# formatter preps base64 string for inclusion, ie <img src=[this return value] ... />
+def image_formatter(img, img_type):
+    return "data:image/" + img_type + ";base64," + image_base64(img, img_type)
 
 
-#Colors on an Image
-# using getrgb
-img = ImageColor.getrgb("blue")
-print(img)
-
-img1 = ImageColor.getrgb("purple")
-print(img1)
-# Create new image & get color RGB tuple.
-img = Image.new("RGB", (256, 256), ImageColor.getrgb("#add8e6"))
-
-#Show image
-img.show()
-# using getrgb
-
-img = ImageColor.getrgb("skyblue")
-print(img)
-
-img1 = ImageColor.getrgb("purple")
-print(img1)
-
-
-#ImageDraw Module
-#Create Image object
-im = Image.open("static/assets/mountain.jpeg")
-
-#Draw line
-draw = ImageDraw.Draw(im)
-draw.line((0, 0) + im.size, fill=128)
-draw.line((0, im.size[1], im.size[0], 0), fill=128)
-
-#Show image
-im.show()
-
-# get an image
-base = Image.open('static/assets/mountain.jpeg').convert('RGBA')
-
-# make a blank image for the text, initialized to transparent text color
-txt = Image.new('RGBA', base.size, (255,255,255,0))
-
-# get a font
-fnt = ImageFont.truetype('E:/PythonPillow/Fonts/Pacifico.ttf', 40)
-
-# get a drawing context
-d = ImageDraw.Draw(txt)
-
-# draw text, half opacity
-d.text((14,14), "Tutorials", font=fnt, fill=(255,255,255,128))
-
-# draw text, full opacity
-d.text((14,60), "Point", font=fnt, fill=(255,255,255,255))
-out = Image.alpha_composite(base, txt)
-
-#Show image
-out.show()
-
-img = Image.new('RGB', (500, 300), (125, 125, 125))
-draw = ImageDraw.Draw(img)
-draw.line((200, 100, 300, 200), fill=(0, 0, 0), width=10)
-
-img.show()
+# color_data prepares a series of images for data analysis
+def image_data(path=Path("static/img/"), img_list=None):  # path of static images is defaulted
+    if img_list is None:  # color_dict is defined with defaults
+        img_list = [
+            {'source': "Peter Carolin", 'label': "Lassen Volcano", 'file': "mountain.jpeg"},
+            {'source': "iconsdb.com", 'label': "Black square", 'file': "black-square-16.png"},
+            {'source': "iconsdb.com", 'label': "Red square", 'file': "red-square-16.png"},
+            {'source': "iconsdb.com", 'label': "Green square", 'file': "green-square-16.png"},
+            {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.jpg"},
+            {'source': "iconsdb.com", 'label': "White square", 'file': "white-square-16.png"},
+        ]
+    # gather analysis data and meta data for each image, adding attributes to each row in table
+    for img_dict in img_list:
+        # File to open
+        file = path / img_dict['file']  # file with path for local access (backend)
+        print(file)
+        # Python Image Library operations
+        img_reference = Image.open(file)  # PIL
+        img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
+        img_dict['format'] = img_reference.format
+        img_dict['mode'] = img_reference.mode
+        img_dict['size'] = img_reference.size
+        # Conversion of original Image to Base64, a string format that serves HTML nicely
+        img_dict['base64'] = image_formatter(img_reference, img_dict['format'])
+        # Numpy is used to allow easy access to data of image, python list
+        img_dict['data'] = numpy.array(img_data)
+        img_dict['hex_array'] = []
+        img_dict['binary_array'] = []
+        # 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
+        for pixel in img_dict['data']:
+            # hexadecimal conversions
+            hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
+            hex_value = hex_value.replace("x", "0")
+            img_dict['hex_array'].append("#" + hex_value)
+            # binary conversions
+            bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
+            img_dict['binary_array'].append(bin_value)
+        # create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
+        img_dict['gray_data'] = []
+        for pixel in img_dict['data']:
+            average = (int(pixel[0]) + pixel[1] + pixel[2]) // 3  # integer division
+            if len(pixel) > 3:
+                img_dict['gray_data'].append((average, average, average, pixel[3]))
+            else:
+                img_dict['gray_data'].append((average, average, average))
+        img_reference.putdata(img_dict['gray_data'])
+        img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
+    return img_list  # list is returned with all the attributes for each image dictionary
 
 
-
-#Image Sequences
-img = Image.open('static/assets/mountain.jpeg')
-#Skip to the second frame
-img.seek(1)
-try:
-    while 1:
-        img.seek(img.tell() + 1)
-        #do_something to img
-except EOFError:
-    #End of sequence
-    pass
-
-#Adding Filters to an image
-im = Image.open('static/assets/mountain.jpeg')
-im1 = im.filter(ImageFilter.BLUR)
-im1.show()
-im2 = im.filter(ImageFilter.MinFilter(3))
-im2.show()
-im3 = im.filter(ImageFilter.MinFilter) # same as MinFilter(3)
-im3.show()
-ImageFilter.MinFilter(size=3)
-#Create image object
-img = Image.open('static/assets/mountain.jpeg')
-#Applying the blur filter
-img1 = img.filter(BLUR)
-img1.save('images/ImageFilter_blur.jpg')
-img1.show()
-#Create image object
-img = Image.open('static/assets/mountain.jpeg')
-#Applying the blur filter
-img1 = img.filter(CONTOUR)
-img1.save('images/ImageFilter_blur.jpg')
-img1.show()
-#Create image object
-img = Image.open('static/assets/mountain.jpeg')
-#Applying the blur filter
-img1 = img.filter(DETAIL)
-img1.save('images/ImageFilter_blur.jpg')
-img1.show()
-#Create image object
-img = Image.open('static/assets/mountain.jpeg')
-#Applying the blur filter
-img1 = img.filter(EDGE_ENHANCE)
-img1.save('images/ImageFilter_blur.jpg')
-img1.show()
-#Create image object
-img = Image.open('static/assets/mountain.jpeg')
-#Applying the blur filter
-img1 = img.filter(EDGE_ENHANCE_MORE)
-img1.save('images/ImageFilter_blur.jpg')
-img1.show()
-#Create image object
-img = Image.open('static/assets/mountain.jpeg')
-#Applying the blur filter
-img1 = img.filter(EMBOSS)
-img1.save('images/ImageFilter_blur.jpg')
-img1.show()
-#Create image object
-img = Image.open('static/assets/mountain.jpeg')
-#Applying the blur filter
-img1 = img.filter(FIND_EDGES)
-img1.save('images/ImageFilter_blur.jpg')
-img1.show()
-#Create image object
-img = Image.open('static/assets/mountain.jpeg')
-#Applying the blur filter
-img1 = img.filter(SMOOTH)
-img1.save('images/ImageFilter_blur.jpg')
-img1.show()
-#Create image object
-img = Image.open('static/assets/mountain.jpeg')
-#Applying the blur filter
-img1 = img.filter(SHARPEN)
-img1.save('images/ImageFilter_blur.jpg')
-img1.show()
-#Create image object
-img = Image.open('static/assets/mountain.jpeg')
-#Applying the blur filter
-img1 = img.filter(SHARPEN)
-img1.save('images/ImageFilter_blur.jpg')
-img1.show()
-
-
-#Merging two Images
-#Read the two images
-image1 = Image.open('static/assets/mountain.jpeg')
-image1.show()
-image2 = Image.open('static/assets/ncs_logo.png')
-image2.show()
-#resize, first image
-image1 = image1.resize((426, 240))
-image1_size = image1.size
-image2_size = image2.size
-new_image = Image.new('RGB',(2*image1_size[0], image1_size[1]), (250,250,250))
-new_image.paste(image1,(0,0))
-new_image.paste(image2,(image1_size[0],0))
-new_image.save("images/merged_image.jpg","JPEG")
-new_image.show()
-
-#Blur an Image
-#Import required Image library
-#Open existing image
-OriImage = Image.open('static/assets/mountain.jpeg')
-OriImage.show()
-
-
-#Merging Images
-image = Image.open("static/assets/mountain.jpeg")
-r, g, b = image.split()
-image.show()
-image = Image.merge("RGB", (b, g, r))
-image.show()
-blurImage = OriImage.filter(ImageFilter.BLUR)
-blurImage.show()
-#Save blurImage
-blurImage.save('images/simBlurImage.jpg')
-
-#Create an Image Object from an Image
-im = Image.open('static/assets/mountain.jpeg')
-
-#Display actual image
-im.show()
-
-#left, upper, right, lowe
-#Crop
-cropped = im.crop((1,2,300,300))
-
-#Display the cropped portion
-cropped.show()
-
-#Save the cropped image
-cropped.save('images/croppedBeach1.jpg')
-
-#Creating Thumbnails
-def tnails():
-    try:
-        image = Image.open('images/cat.jpg')
-        image.thumbnail((90,90))
-        image.save('images/thumbnail.jpg')
-        image1 = Image.open('images/thumbnail.jpg')
-        image1.show()
-    except IOError:
-        pass
-tnails()
+# run this as standalone tester to see data printed in terminal
+if __name__ == "__main__":
+    local_path = Path("../starter/static/img/")
+    img_test = [
+        {'source': "Peter Carolin", 'label': "Lassen Volcano", 'file': "lassen-volcano-256.jpg"},
+    ]
+    items = image_data(local_path, img_test)  # path of local run
+    for row in items:
+        # print some details about the image so you can validate that it looks like it is working
+        # meta data
+        print("---- meta data -----")
+        print(row['label'])
+        print(row['format'])
+        print(row['mode'])
+        print(row['size'])
+        # data
+        print("----  data  -----")
+        print(row['data'])
+        print("----  gray data  -----")
+        print(row['gray_data'])
+        print("----  hex of data  -----")
+        print(row['hex_array'])
+        print("----  bin of data  -----")
+        print(row['binary_array'])
+        # base65
+        print("----  base64  -----")
+        print(row['base64'])
+        # display image
+        print("----  render and write in image  -----")
+        filename = local_path / row['file']
+        image_ref = Image.open(filename)
+        draw = ImageDraw.Draw(image_ref)
+        draw.text((0, 0), "Size is {0} X {1}".format(*row['size']))  # draw in image
+        image_ref.show()
+print()
