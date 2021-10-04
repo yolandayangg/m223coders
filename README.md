@@ -21,9 +21,12 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
 General focus: RGB, TPT (3.3/3.4)
 
 1. 3.3/3.4 notes and quizzes
-2. [RGB- grayscale](https://github.com/yolandayangg/flask_portfolio/issues/38)
+
+[2. RGB- grayscale](https://github.com/yolandayangg/flask_portfolio/issues/38)
+
 3. RGB- integrating secret message within image
-4. [RGB- manipulating image](https://github.com/yolandayangg/flask_portfolio/issues/43)
+
+[4. RGB- manipulating image](https://github.com/yolandayangg/flask_portfolio/issues/43)
 
 [5. Learning about base2/base8/base16/base64](https://docs.google.com/document/d/1KD1BIqaWoBsD48YYa9w8Wri7Nm3j-ngzZ26PQ9Mjqnw/edit)
 
