@@ -17,16 +17,30 @@ Stanley Yan (user Stanley Yan) [Tasks](https://github.com/yolandayangg/flask_por
 
 Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/flask_portfolio/issues) [Commits](https://github.com/yolandayangg/flask_portfolio/commits?author=TheRadRabbidRabbit) [Profile](https://github.com/TheRadRabbidRabbit) [Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1?card_filter_query=assignee%3Atheradrabbidrabbit)
 
+<h1>Week 7</h1>
+
+[1. Multiply/divide by 2/shift]
+
+[2. Extend/switch ASCII to unicode]
+
+[3. Color Codes]
+
+[4. Unsigned Addition]
+
+[5. Logic Gates]
+
+[6. Signed Addition]
+
 <h1>Week 6 Progress</h1>
 General focus: RGB, TPT (3.3/3.4)
 
-1. 3.3/3.4 notes and quizzes
+[1. 3.3/3.4 notes and quizzes](https://github.com/yolandayangg/flask_portfolio/issues/43)
 
 [2. RGB- grayscale](https://github.com/yolandayangg/flask_portfolio/issues/38)
 
-3. RGB- integrating secret message within image
+[3. RGB- integrating secret message within image](https://github.com/yolandayangg/flask_portfolio/issues/45) 
 
-[4. RGB- manipulating image](https://github.com/yolandayangg/flask_portfolio/issues/43)
+[4. RGB- manipulating image]
 
 [5. Learning about base2/base8/base16/base64](https://docs.google.com/document/d/1KD1BIqaWoBsD48YYa9w8Wri7Nm3j-ngzZ26PQ9Mjqnw/edit)
 
