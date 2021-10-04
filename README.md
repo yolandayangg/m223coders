@@ -24,7 +24,8 @@ General focus: RGB, TPT (3.3/3.4)
 2. RGB- grayscale
 3. RGB- integrating secret message within image
 4. RGB- manipulating image
-5. Learning about base2/base8/base16/base64
+[5. Learning about base2/base8/base16/base64](https://docs.google.com/document/d/1KD1BIqaWoBsD48YYa9w8Wri7Nm3j-ngzZ26PQ9Mjqnw/edit)
+[6. Project layout](https://docs.google.com/document/d/1Cl5AXjKMr7H9Ecaykdiq1W0RUENM2siBh5_4wGeSQI4/edit?usp=sharing)
 
 <h1>Week 5 Progress</h1>
 General focus: RGB, test prep (3.1-3.4), base2/base8/base16/64
