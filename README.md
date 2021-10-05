@@ -34,7 +34,7 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
 <h1>Week 6 Progress</h1>
 General focus: RGB, TPT (3.3/3.4)
 
-[1. 3.3/3.4 notes and quizzes](https://github.com/yolandayangg/flask_portfolio/issues/43)
+[1. 3.3/3.4 notes and quizzes](https://github.com/yolandayangg/flask_portfolio/issues/45)
 
 [2. RGB- grayscale](https://github.com/yolandayangg/flask_portfolio/issues/38)
 
