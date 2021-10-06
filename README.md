@@ -19,17 +19,17 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
 
 <h1>Week 7</h1>
 
-[1. Multiply/divide by 2/shift]
+[1. Multiply/divide by 2/shift](https://github.com/yolandayangg/flask_portfolio/issues/48)
 
-[2. Extend/switch ASCII to unicode]
+[2. Extend/switch ASCII to unicode](https://github.com/yolandayangg/flask_portfolio/issues/52)
 
-[3. Color Codes]
+[3. Color Codes](https://github.com/yolandayangg/flask_portfolio/issues/51)
 
-[4. Unsigned Addition]
+[4. Unsigned Addition](https://github.com/yolandayangg/flask_portfolio/issues/50)
 
-[5. Logic Gates]
+[5. Logic Gates](https://github.com/yolandayangg/flask_portfolio/issues/53)
 
-[6. Signed Addition]
+[6. Signed Addition](https://github.com/yolandayangg/flask_portfolio/issues/49) 
 
 <h1>Week 6 Progress</h1>
 General focus: RGB, TPT (3.3/3.4)
