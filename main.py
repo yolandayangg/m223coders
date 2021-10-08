@@ -4,6 +4,8 @@ from pathlib import Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-
 from flask import Flask, render_template, request
 
 # create a Flask instance
+from image import image_data
+
 app = Flask(__name__)
 
 
@@ -68,9 +70,15 @@ def questions():
 def discussion():
     return render_template("layouts/discussion.html")
 
-@app.route('/rgb/', methods=['GET', 'POST'])
+@app.route('/rgb/')
 def rgb():
-    return render_template("layouts/rgb.html")
+    path = Path(app.root_path) / "static" / "assets"
+    return render_template("rgb.html", images=image_data(path))
+
+@app.route('/logicgates/', methods=['GET', 'POST'])
+def logicgates():
+    return render_template("layouts/logicgates.html")
+
 
 @app.route('/stanley', methods=['GET', 'POST'])
 def stanley():

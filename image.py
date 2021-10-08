@@ -4,17 +4,6 @@ import base64
 from io import BytesIO
 from pathlib import Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
 
-from PIL import Image, ImageDraw, ImageFont
-
-from PIL import Image, ImageDraw, ImageFont
-
-img = Image.open('images/mountain.jpeg')
-d1 = ImageDraw.Draw(img)
-myFont = ImageFont.truetype('E:/PythonPillow/Fonts/FreeMono.ttf', 40)
-d1.text((0, 0), "Sample text", font=myFont, fill =(255, 0, 0))
-img.show()
-img.save("images/image_text.jpg")
-
 
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 def image_base64(img, img_type):
@@ -112,5 +101,4 @@ if __name__ == "__main__":
         draw = ImageDraw.Draw(image_ref)
         draw.text((0, 0), "Size is {0} X {1}".format(*row['size']))  # draw in image
         image_ref.show()
-print(
-
+print()
