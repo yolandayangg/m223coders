@@ -110,6 +110,58 @@
                 }
             }
         }
+        function times(n) {
+            let binary = getBits();
+            // convert to decimal and do math
+            let decimal = parseInt(binary, 2);
+            if (n > 1) {  // multiply
+                decimal = MAX === decimal ? 0 : decimal *= n; // OVERFLOW or times
+            } else  {     // divide
+                decimal = 0 === decimal ? MAX : decimal /= n; // OVERFLOW or divide
+            }
+            // convert the result back to binary
+            binary = decimal_2_base(decimal, 2);
+            // update conversions
+            setConversions(binary);
+            // update bits
+            for (let i = 0; i < binary.length; i++) {
+                let digit = binary.substr(i, 1);
+                document.getElementById('digit' + i).value = digit;
+                if (digit === "1") {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
+                } else {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
+                }
+            }
+        }
+        function multiply(n) {
+            let binary = getBits();
+            // convert to decimal and do math
+            let decimal = parseInt(binary, 2);
+            if (n > 0) {  // multiply
+                decimal = 0 === decimal ? 0 : decimal *= n; // OVERFLOW or PLUS
+            } else {     // divide
+                decimal = 0 === decimal ? MAX : decimal *= n; // OVERFLOW or MINUS
+            }
+            // convert the result back to binary
+            binary = decimal_2_base(decimal, 2);
+            // update conversions
+            setConversions(binary);
+            // update bits
+            for (let i = 0; i < binary.length; i++) {
+                let digit = binary.substr(i, 1);
+                document.getElementById('digit' + i).value = digit;
+                if (digit === "1") {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
+                } else {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
+                }
+            }
+        }
     </script>
 {% endblock %}
 
@@ -121,6 +173,7 @@
             <div class="col-8">
                 <table class="table">
                     <tr id="table">
+                        <th>Multiply</th>
                         <th>Plus</th>
                         <th>Binary</th>
                         <th>Octal</th>
@@ -129,8 +182,10 @@
                         <!-- Hack: display ASCII label for printable character(s)  -->
                         <th>ASCII</th>
                         <th>Minus</th>
+                        <th>Divide</th>
                     </tr>
                     <tr>
+                        <td><button type="button" id="multiply2" onclick="multiply(2)">(*2)</button></td>
                         <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
                         <td id="binary">00000000</td>
                         <td id="octal">0</td>
@@ -139,6 +194,7 @@
                         <td id="ascii">null</td>
                         <!-- Hack: display ASCII printable character(s)  -->
                         <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
+                        <td><button type="button" id="divide2" onclick="multiply(1/2)">(/2)</button></td>
 
                     </tr>
                 </table>
