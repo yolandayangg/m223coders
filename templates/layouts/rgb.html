@@ -29,6 +29,7 @@
 </head>
 
 <body style="font-family: gilroyLIGHT,serif; color: var(--gray);" >
+
 <!-- Bootstrap Navigation Code -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="http://nighthawkcodingsociety.com/">
@@ -95,7 +96,6 @@
             // Clock refresh frequency
             setInterval(clock, 1000);
         </script>
-    </div>
 </nav>
 
 <!-- CONTENT Block, utilize this block for page specific content  -->
@@ -129,7 +129,7 @@
                 </td>
                 <td>
 
-                    <img id="mountainImage" <img class="img-responsive py-3" src="/static/assets/mountain.jpeg" alt="" width="256" height="Auto">
+                    <img id="mountainImage" class="img-responsive py-3" src="/static/assets/mountain.jpeg" alt="" width="256" height="Auto">
                     <button onclick="myFunction()">Grayscale</button><br><br>
                     <script>
                         function myFunction() {
@@ -139,7 +139,7 @@
                 </td>
                 <td>
                     <div class="overflow-auto" style="height: 256px">
-                        <table class="table"
+                        <table class="table">
 
                             <thead>
                             <tr>
@@ -2478,7 +2478,7 @@
                 </td>
                 <td>
 
-                    <img id="blackSquare" <img class="img-responsive py-3" src="/static/assets/black.png" alt="" width="256" height="Auto">
+                    <img id="blackSquare" class="img-responsive py-3" src="/static/assets/black.png" alt="" width="256" height="Auto">
                     <button onclick="myFunction2()">Grayscale</button><br><br>
                     <script>
                         function myFunction2() {
@@ -4819,7 +4819,7 @@
                 </td>
                 <td>
 
-                   <img id="redSquare" <img class="img-responsive py-3" src="/static/assets/red.png" alt="" width="256" height="Auto">
+                   <img id="redSquare" class="img-responsive py-3" src="/static/assets/red.png" alt="" width="256" height="Auto">
                     <button onclick="myFunction3()">Grayscale</button><br><br>
                     <script>
                         function myFunction3() {
@@ -7160,7 +7160,7 @@
                 </td>
                 <td>
 
-                    <img id="greenSquare" <img class="img-responsive py-3" src="/static/assets/green-square-16.png" alt="" width="256" height="Auto">
+                    <img id="greenSquare" class="img-responsive py-3" src="/static/assets/green-square-16.png" alt="" width="256" height="Auto">
                     <button onclick="myFunction4()">Grayscale</button><br><br>
                     <script>
                         function myFunction4() {
@@ -9501,7 +9501,7 @@
                 </td>
                 <td>
 
-                    <img id="blueSquare" <img class="img-responsive py-3" src="/static/assets/blue.png" alt="" width="256" height="Auto">
+                    <img id="blueSquare" class="img-responsive py-3" src="/static/assets/blue.png" alt="" width="256" height="Auto">
                     <button onclick="myFunction5()">Grayscale</button><br><br>
                     <script>
                         function myFunction5() {
@@ -11842,7 +11842,7 @@
                 </td>
                 <td>
 
-                    <img id="whiteSquare" <img class="img-responsive py-3" src="/static/assets/white-square-16.png" alt="" width="256" height="Auto">
+                    <img id="whiteSquare" class="img-responsive py-3" src="/static/assets/white-square-16.png" alt="" width="256" height="Auto">
                     <button onclick="myFunction6()">Grayscale</button><br><br>
                     <script>
                         function myFunction6() {
@@ -14183,7 +14183,7 @@
                 </td>
                 <td>
 
-                    <img id="blueSquare.jpg" <img class="img-responsive py-3" src="/static/assets/blue-square-16.jpeg" alt="" width="256" height="Auto">
+                    <img id="blueSquare.jpg" class="img-responsive py-3" src="/static/assets/blue-square-16.jpeg" alt="" width="256" height="Auto">
                     <button onclick="myFunction7()">Grayscale</button><br><br>
                     <script>
                         function myFunction7() {
@@ -16532,5 +16532,79 @@
     </div>
 
 </div>
+
+
+<label>
+    <input type="color">
+</label>
+<div class="w3-row">
+    <div class="w3-col m7" id="result01" style="background-color:rgb(255,0,0);height:200px"></div>
+    <div class="w3-col m1">&nbsp;</div>
+    <div class="w3-col m4">
+        <div class="w3-large" style="font-family:Consolas, 'courier new';bottom:10px;">
+            <input id="rgb01" type="text" class="w3-input w3-border" onchange="setFullColor()" onkeydown="submitOnEnter(event)">
+            <div id="hex01" class="w3-margin-top">#ff0000</div>
+            <div id="hsl01" class="w3-margin-top">hsl(0, 100%, 50%)</div>
+        </div>
+    </div>
+</div>
+<hr style="border-color:#d3d3d3" class="w3-hide-medium w3-hide-large">
+<br>
+<div class="w3-row">
+    <div class="w3-col colorinput">
+        <div style="width:30px;float:left;">R:</div>
+        <input type="number" style="padding-left:6px;width:70px;" id="r01" oninput="setColor(this)" onchange="setColor(this)" value="255">
+    </div>
+</div>
+<div class="w3-row">
+    <div class="w3-col colorinput">
+        <div style="width:30px;float:left;">G:</div>
+        <input type="number" style="padding-left:6px;width:70px;" id="g01" oninput="setColor(this)" onchange="setColor(this)" value="0">
+    </div>
+</div>
+<div class="w3-row">
+    <div class="w3-col colorinput">
+        <div style="width:30px;float:left;">B:</div>
+        <input type="number" style="padding-left:6px;width:70px;" id="b01" oninput="setColor(this)" onchange="setColor(this)" value="0">
+    </div>
+</div>
+<div id="linktocp"></div>
+<script src="/lib/w3color.js"></script>
+<script>
+    function submitOnEnter(e) {
+        keyboardKey = e.which || e.keyCode;
+        if (keyboardKey == 13) {
+            setFullColor();
+        }
+    }
+    function setColor(elmnt) {
+        var r, g, b, rgb;
+        r = document.getElementById("r01");
+        g = document.getElementById("g01");
+        b = document.getElementById("b01");
+        elmnt.value = Number(elmnt.value);
+        if (parseInt(elmnt.value) < 0) {elmnt.value = "0";}
+        if (parseInt(elmnt.value) > 255) {elmnt.value = "255";}
+        rgb = w3color("rgb(" + r.value + ", " + g.value + ", " + b.value + ")");
+        document.getElementById("result01").style.backgroundColor = rgb.toRgbString();
+        document.getElementById("rgb01").value = rgb.toRgbString();
+        document.getElementById("hsl01").innerHTML = rgb.toHslString();
+        document.getElementById("hex01").innerHTML = rgb.toHexString();
+        document.getElementById("linktocp").innerHTML = "<hr style='border-color:#dfdfdf'><p><a href='colors_picker.asp?colorhex=" + rgb.toHexString().substr(1) + "'>Use this color in our Color Picker</a></p>";
+    }
+    function setFullColor() {
+        var color = w3color(document.getElementById("rgb01").value);
+        var rgb = color.toRgb();
+        document.getElementById("r01").value = rgb.r;
+        document.getElementById("g01").value = rgb.g;
+        document.getElementById("b01").value = rgb.b;
+        setColor(document.getElementById("r01"));
+    }
+    color = w3color("ff0000");
+    document.getElementById("rgb01").value = color.toRgbString();
+    setFullColor();
+</script>
+
+
 </body>
 </html>

@@ -4,8 +4,6 @@ from pathlib import Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-
 from flask import Flask, render_template, request
 
 # create a Flask instance
-from image import image_data
-
 app = Flask(__name__)
 
 
@@ -70,17 +68,11 @@ def questions():
 def discussion():
     return render_template("layouts/discussion.html")
 
-@app.route('/rgb/')
+@app.route('/rgb/', methods=['GET', 'POST'])
 def rgb():
-    path = Path(app.root_path) / "static" / "assets"
-    return render_template("rgb.html", images=image_data(path))
+    return render_template("layouts/rgb.html")
 
-@app.route('/logicgates/', methods=['GET', 'POST'])
-def logicgates():
-    return render_template("layouts/logicgates.html")
-
-
-@app.route('/stanley', methods=['GET', 'POST'])
+@app.route('/stanley/', methods=['GET', 'POST'])
 def stanley():
     # submit button has been pushed
     print("1")
@@ -106,7 +98,7 @@ def tianbin():
     # starting and empty input default
     return render_template("layouts/tianbin.html", name1="World")
 
-@app.route('/justin', methods=['GET', 'POST'])
+@app.route('/justin/', methods=['GET', 'POST'])
 def justin():
     # submit button has been pushed
     print("1")
