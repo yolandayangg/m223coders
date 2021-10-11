@@ -1,0 +1,223 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Hexcodes" %}
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    </head>
+
+    <script>
+        $(document).ready(function() {
+            red();
+            green();
+            blue();
+            makergb();
+
+
+            function red() {
+                var redLine = $("#red-line")
+                var buttons = redLine.children("button")
+                // empty string to add 1 or 0 to it
+                var string = "";
+                for(var button of buttons) {
+                    string += button.innerHTML.trim();
+                }
+                var redhex = parseInt(string, 2);
+                document.getElementById("red").innerHTML = redhex;
+                document.getElementById("redbinaryprint").innerHTML = redhex;
+
+                $("#red-binary").text(redhex);
+            }
+// when clicked, reads the button's text as either a 0 or 1, waits for a button to be clicked and then runs (event listener)
+            $(".tgl-btn").click("click", function () {
+                var num = parseInt(this.innerHTML, 10)
+                // toggle between 1 and 0
+                if(num == 0) {
+                    this.innerHTML = "1"
+                }
+                else if (num == 1){
+                    this.innerHTML= "0"
+                }
+                red();
+                makergb();
+            });
+            function green(){
+                var greenLine = $("#green-line")
+                var buttons = greenLine.children("button")
+                // empty string to add 1 or 0 to it
+                var string = "";
+                for(var button of buttons) {
+                    string += button.innerHTML.trim();
+                }
+                var greenhex = parseInt(string, 2)
+                document.getElementById("green").innerHTML = greenhex;
+                document.getElementById("greenbinaryprint").innerHTML = greenhex;
+                $("#green-binary").text(greenhex)
+
+            }
+// when clicked, reads the button's text as either a 0 or 1, waits for a button to be clicked and then runs (event listener)
+            $(".tgl-btn1").click("click", function () {
+                var num = parseInt(this.innerHTML, 10)
+                // toggle between 1 and 0
+                if(num == 0) {
+                    this.innerHTML = "1"
+                }
+                else if (num == 1){
+                    this.innerHTML= "0"
+                }
+                green();
+                makergb();
+            });
+            function blue(){
+                var blueLine = $("#blue-line")
+                var buttons = blueLine.children("button")
+                // empty string to add 1 or 0 to it
+                var string = "";
+                for(var button of buttons) {
+                    string += button.innerHTML.trim();
+                }
+                var bluehex = parseInt(string, 2)
+                bluehex =
+                    document.getElementById("blue").innerHTML = bluehex;
+                document.getElementById("bluebinaryprint").innerHTML = bluehex;
+                $("#blue-binary").text(bluehex)
+
+            }
+// when clicked, reads the button's text as either a 0 or 1, waits for a button to be clicked and then runs (event listener)
+            $(".tgl-btn2").click("click", function () {
+                var num = parseInt(this.innerHTML, 10)
+                // toggle between 1 and 0
+                if(num == 0) {
+                    this.innerHTML = "1"
+                }
+                else if (num == 1){
+                    this.innerHTML= "0"
+                }
+                blue();
+                makergb();
+            });
+
+            function makergb(){
+                var red = document.getElementById("red").innerHTML.toString(16);
+                var green = document.getElementById("green").innerHTML.toString(16);
+                var blue = document.getElementById("blue").innerHTML.toString(16);
+                var rgb = '#' + red + green + blue;
+
+
+                document.getElementById("hexcode").innerHTML = rgb;
+                console.log(red);
+                const element = document.getElementById("hexline")
+                element.style.backgroundColor = rgb;
+            }
+            makergb();
+
+        });
+    </script>
+
+    <style>
+        .tgl-btn {
+            width: 50px;
+            height: 50px;
+            align-content: center;
+        }
+        .tgl-btn1 {
+            width: 50px;
+            height: 50px;
+            align-content: center;
+        }
+        .tgl-btn2{
+            width: 50px;
+            height: 50px;
+            align-content: center;
+        }
+        red-line {
+            align-content: center;
+        }
+        green-line {
+            align-content: center;
+        }
+        blue-line {
+            align-content: center;
+        }
+        p {
+            align-text: left;
+        }
+    </style>
+
+    <div id="red-line">
+        <button class="tgl-btn" id="test"> 0</button>
+        <button class="tgl-btn" id="test"> 0</button>
+        <button class="tgl-btn" id="test"> 0</button>
+        <button class="tgl-btn" id="test"> 0</button>
+        <button class="tgl-btn" id="test"> 0</button>
+        <button class="tgl-btn" id="test"> 0</button>
+        <button class="tgl-btn" id="test"> 0</button>
+        <button class="tgl-btn" id="test"> 0</button>
+        <p hidden id="red">0</p>
+        <p> R: Decimal value is <span id="red-binary"></span></p>
+
+    </div>
+
+    <div id="green-line">
+        <button class="tgl-btn1" id="test"> 0</button>
+        <button class="tgl-btn1" id="test"> 0</button>
+        <button class="tgl-btn1" id="test"> 0</button>
+        <button class="tgl-btn1" id="test"> 0</button>
+        <button class="tgl-btn1" id="test"> 0</button>
+        <button class="tgl-btn1" id="test"> 0</button>
+        <button class="tgl-btn1" id="test"> 0</button>
+        <button class="tgl-btn1" id="test"> 0</button>
+        <p hidden id="green">0</p>
+        <p> G: Decimal value is <span id="green-binary"></span></p>
+
+    </div>
+
+    <div id="blue-line">
+        <button class="tgl-btn2" id="test"> 0</button>
+        <button class="tgl-btn2" id="test"> 0</button>
+        <button class="tgl-btn2" id="test"> 0</button>
+        <button class="tgl-btn2" id="test"> 0</button>
+        <button class="tgl-btn2" id="test"> 0</button>
+        <button class="tgl-btn2" id="test"> 0</button>
+        <button class="tgl-btn2" id="test"> 0</button>
+        <button class="tgl-btn2" id="test"> 0</button>
+        <p hidden id="blue">0</p>
+        <p> B: Decimal value is <span id="blue-binary"></span></p>
+
+    </div>
+
+    <div id="hexinfo">
+        <p>The hexcode is <span id="hexcode"></span></p>
+        <p>The RGB is (<span id="redbinaryprint">0</span>, <span id="greenbinaryprint">0</span>, <span id="bluebinaryprint">0</span>)</p>
+    </div>
+
+    <div class="container" id="hexline">
+
+    </div>
+
+    <style>
+        :root {
+            --rgbvar: ;
+        }
+        .container {
+            background-color: var(--rgbvar);
+            height: 200px;
+            width: 1000px;
+        }
+    </style>
+
+{% endblock %}
+{% block background %}
+    <style>
+        body {
+            background-image: repeating-linear-gradient(to bottom right, black, sandybrown, green, rgb(255, 122, 89));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+{% endblock %}

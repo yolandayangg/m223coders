@@ -75,9 +75,9 @@ def rgb():
     path = Path(app.root_path) / "static" / "assets"
     return render_template("rgb.html", images=image_data(path))
 
-@app.route('/logicgates/', methods=['GET', 'POST'])
-def logicgates():
-    return render_template("layouts/logicgates.html")
+@app.route('/BinaryRGB/', methods=['GET', 'POST'])
+def Binaryrgb():
+    return render_template("layouts/BinaryRGB.html")
 
 
 @app.route('/stanley', methods=['GET', 'POST'])

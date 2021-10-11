@@ -31,7 +31,7 @@
         }
         // setter for DOM values
         function setConversions(binary) {
-            document.getElementById('binary').innerHTML = binary;
+            document.getElementById('binary').innerHTML = parseInt(binary);
             // DOM assignment to Octal conversion
             document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
             // DOM assignment to Hexadecimal conversion
@@ -43,6 +43,8 @@
              below ASCII for more ideas of where to make changes
              */
             document.getElementById('ascii').innerHTML = String.fromCharCode(parseInt(binary, 2))
+            /* this is new for unicode */
+            document.getElementById('unicode').innerHTML = String.fromCharCode(decimal)
         }
 
         // algorithm to convert decimal to base using division and remainder
@@ -181,6 +183,7 @@
                         <th>Decimal</th>
                         <!-- Hack: display ASCII label for printable character(s)  -->
                         <th>ASCII</th>
+                        <th>Unicode</th>
                         <th>Minus</th>
                         <th>Divide</th>
                     </tr>
@@ -192,6 +195,7 @@
                         <td id="hexadecimal">0</td>
                         <td id="decimal">0</td>
                         <td id="ascii">null</td>
+                        <td id="unicode">0</td>
                         <!-- Hack: display ASCII printable character(s)  -->
                         <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
                         <td><button type="button" id="divide2" onclick="multiply(1/2)">(/2)</button></td>
