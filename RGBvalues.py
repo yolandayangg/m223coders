@@ -216,12 +216,6 @@ im = im.rotate(45)
 im.show()
 
 
-#Working with Images
-image = Image.open('static/assets/mountain.jpeg')
-image1 = Image.open('beach1.bmp')
-image1.show()
-
-
 #Flip and Rotate Images
 # Open an already existing image
 imageObject = Image.open("static/assets/mountain.jpeg")
@@ -260,7 +254,6 @@ resized_im = im.resize((round(im.size[0]*0.5), round(im.size[1]*0.5)))
 #Display the resized imaged
 resized_im.show()
 #Save the cropped image
-resized_im.save('resizedBeach1.jpg')
 
 
 image = Image.open("static/assets/mountain.jpeg")
