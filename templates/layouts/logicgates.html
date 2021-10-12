@@ -19,7 +19,7 @@
     <h1 class="text-center">Logic Gates Lab</h1>
     <h1 class="text-left">Inputs</h1>
 
-    <button class="btn" type="submit">A</button><button class="btn" type="submit">B</button>
+    <button type="button" id="A" onclick="A">A</button><button id="B" type="button" onclick="B">B</button><button id="AB" type="button" onclick="AB">A+B</button>
     <TABLE style="margin-left: 60%">
         <TR>
             <TD>Logic Gates</TD>
@@ -31,41 +31,61 @@
         <TR>
             <TD><img src="/static/assets/logic/and.png" style="height: 100px" alt=""></TD>
             <TD>And Gate</TD>
-            <TD><p id="and">My First Paragraph.</p></TD>
+            <TD><p id="and"></p></TD>
         </TR>
         <TR>
             <TD><img src="/static/assets/logic/nand.png" style="height: 100px" alt=""></TD>
             <TD>Nand Gate</TD>
-            <TD><TD><p id="nand">My First Paragraph.</p></TD></TD>
+            <TD><TD><p id="nand"></p></TD></TD>
         </TR>
         <TR>
             <TD><img src="/static/assets/logic/or.png" style="height: 100px" alt=""></TD>
             <TD>Or Gate</TD>
-            <TD><p id="or">My First Paragraph.</p></TD>
+            <TD><p id="or"></p></TD>
         </TR>
         <TR>
             <TD><img src="/static/assets/logic/nor.png" style="height: 100px" alt=""></TD>
             <TD>Nor Gate</TD>
-            <TD><TD><p id="nor">My First Paragraph.</p></TD></TD>
+            <TD><TD><p id="nor"></p></TD></TD>
         </TR>
         <TR>
             <TD><img src="/static/assets/logic/xor.png" style="height: 100px" alt=""></TD>
             <TD>Xor Gate</TD>
-            <TD><p id="xor">My First Paragraph.</p></TD>
+            <TD><p id="xor"></p></TD>
         </TR>
         <TR>
             <TD><img src="/static/assets/logic/not.jpg" style="height: 100px" alt=""></TD>
             <TD>Inverter(Not Gate)</TD>
-            <TD><p id="not">My First Paragraph.</p></TD>
+            <TD><p id="not"></p></TD>
         </TR>
     </TABLE>
 <script>
-    document.getElementById("and").innerHTML = 1 & 0;
-    document.getElementById("or").innerHTML = 1 | 0;
-    document.getElementById("xor").innerHTML = 1 ^ 0;
-    document.getElementById("not").innerHTML = ~ 1;
-    document.getElementById("nand").innerHTML = 1 >>> 0;
-    document.getElementById("nor").innerHTML = 1 >> 0;
+    let a=1, b=0;
+    function A() {
+        document.getElementById("and").innerHTML = a;
+        document.getElementById("or").innerHTML = a;
+        document.getElementById("xor").innerHTML = a;
+        document.getElementById("not").innerHTML = ~ a;
+        document.getElementById("nand").innerHTML = a;
+        document.getElementById("nor").innerHTML = a;
+    }
+    function B() {
+        document.getElementById("and").innerHTML = b;
+        document.getElementById("or").innerHTML = b;
+        document.getElementById("xor").innerHTML = b;
+        document.getElementById("not").innerHTML = ~ b;
+        document.getElementById("nand").innerHTML = b;
+        document.getElementById("nor").innerHTML = b;
+    }
+    function AB() {
+        document.getElementById("and").innerHTML = a & b;
+        document.getElementById("or").innerHTML = a | b;
+        document.getElementById("xor").innerHTML = a ^ b;
+        document.getElementById("not").innerHTML = ~ a; ~ b;
+        document.getElementById("nand").innerHTML = a >>> b;
+        document.getElementById("nor").innerHTML = a >> b;
+    }
+
 </script>
 {% endblock %}
 
