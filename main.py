@@ -74,7 +74,23 @@ def rgb():
 
 @app.route('/BinaryRGB/', methods=['GET', 'POST'])
 def BinaryRGB():
-    return render_template("layouts/BinaryRGB.html")
+    return render_template("layouts/binaryrgb.html")
+
+@app.route('/binaryrgb/', methods=['GET', 'POST'])
+def binaryrgb():
+    return render_template("layouts/binaryrgb.html")
+
+@app.route('/signedaddition/', methods=['GET', 'POST'])
+def signedaddition():
+    return render_template("layouts/signedaddition.html")
+
+@app.route('/unicode/', methods=['GET', 'POST'])
+def unicodee():
+    return render_template("layouts/unicode.html")
+
+@app.route('/unsignedaddition/', methods=['GET', 'POST'])
+def unsignedaddition():
+    return render_template("layouts/unsignedaddition.html")
 
 @app.route('/logicgates/', methods=['GET', 'POST'])
 def logicgates():
@@ -119,6 +135,9 @@ def justin():
     # starting and empty input default
     return render_template("layouts/justin.html", name1="World")
 
+@app.route('/listdictionary/', methods=['GET', 'POST'])
+def listdictionary():
+    return render_template("layouts/unicode.html")
 
 # runs the application on the development server
 if __name__ == "__main__":
