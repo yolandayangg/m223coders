@@ -1,3 +1,4 @@
+Objectives for the week: Create code for all the mini labs and make a new tab for each one under the dropdown menu. Add rows for signed/unsigned addition, buttons to shift left and right, 3 rows of bits for rgb, table for logic gates with input, gate, and output, replace ascii with unicode.
 <h1>Pop quiz 9/10</h1>
 <h2>P3 M223-Coders Yolanda Yang, Stanley Yan, Tianbin Liu, Justin Lemay</h2>
 
