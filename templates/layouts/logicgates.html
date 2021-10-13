@@ -16,77 +16,268 @@
 
 <title>Logic Gates</title>
 {% block body %}
-    <h1 class="text-center">Logic Gates Lab</h1>
-    <h1 class="text-left">Inputs</h1>
+    <body>
+    <style>
 
-    <button type="button" id="A" onclick="A">A</button><button id="B" type="button" onclick="B">B</button><button id="AB" type="button" onclick="AB">A+B</button>
-    <TABLE style="margin-left: 60%">
-        <TR>
-            <TD>Logic Gates</TD>
-        <TR>
-            <TD>Symbol</TD>
-            <TD>Logic Gate</TD>
-            <TD>Result</TD>
-        </TR>
-        <TR>
-            <TD><img src="/static/assets/logic/and.png" style="height: 100px" alt=""></TD>
-            <TD>And Gate</TD>
-            <TD><p id="and"></p></TD>
-        </TR>
-        <TR>
-            <TD><img src="/static/assets/logic/nand.png" style="height: 100px" alt=""></TD>
-            <TD>Nand Gate</TD>
-            <TD><TD><p id="nand"></p></TD></TD>
-        </TR>
-        <TR>
-            <TD><img src="/static/assets/logic/or.png" style="height: 100px" alt=""></TD>
-            <TD>Or Gate</TD>
-            <TD><p id="or"></p></TD>
-        </TR>
-        <TR>
-            <TD><img src="/static/assets/logic/nor.png" style="height: 100px" alt=""></TD>
-            <TD>Nor Gate</TD>
-            <TD><TD><p id="nor"></p></TD></TD>
-        </TR>
-        <TR>
-            <TD><img src="/static/assets/logic/xor.png" style="height: 100px" alt=""></TD>
-            <TD>Xor Gate</TD>
-            <TD><p id="xor"></p></TD>
-        </TR>
-        <TR>
-            <TD><img src="/static/assets/logic/not.jpg" style="height: 100px" alt=""></TD>
-            <TD>Inverter(Not Gate)</TD>
-            <TD><p id="not"></p></TD>
-        </TR>
-    </TABLE>
-<script>
-    let a=1, b=0;
-    function A() {
-        document.getElementById("and").innerHTML = a;
-        document.getElementById("or").innerHTML = a;
-        document.getElementById("xor").innerHTML = a;
-        document.getElementById("not").innerHTML = ~ a;
-        document.getElementById("nand").innerHTML = a;
-        document.getElementById("nor").innerHTML = a;
-    }
-    function B() {
-        document.getElementById("and").innerHTML = b;
-        document.getElementById("or").innerHTML = b;
-        document.getElementById("xor").innerHTML = b;
-        document.getElementById("not").innerHTML = ~ b;
-        document.getElementById("nand").innerHTML = b;
-        document.getElementById("nor").innerHTML = b;
-    }
-    function AB() {
-        document.getElementById("and").innerHTML = a & b;
-        document.getElementById("or").innerHTML = a | b;
-        document.getElementById("xor").innerHTML = a ^ b;
-        document.getElementById("not").innerHTML = ~ a; ~ b;
-        document.getElementById("nand").innerHTML = a >>> b;
-        document.getElementById("nor").innerHTML = a >> b;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-</script>
+        /* Create two equal columns that floats next to each other */
+        .column2 {
+            float: left;
+            width:100%;
+            padding: 10px;
+            height: 800px;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+    </style>
+    <h1>Logic Gates</h1>
+    <div class="row">
+        <div class="column2" style="background-color:#bbb;">
+            <h2>Logic Gates</h2>
+            <table>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Logic Gate</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/OR_ANSI_Labelled.svg/180px-OR_ANSI_Labelled.svg.png" alt=""></td>
+                    <td><p style="color:white;">OR Gate</p></td>
+                    <td>
+                        <select class="ip1" id="input1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="ip2" id="input2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="gtype" id="gateType">
+                            <option value="or">OR</option>
+                        </select>
+                        <button class="btn" onclick="orGate()">O/P</button>
+                        <input class="op" id="output">
+                        <script>
+                            function orGate()
+                            {
+                                var ori1 = document.getElementById("input1").value;
+                                var ori2 = document.getElementById("input2").value;
+                                var org = document.getElementById("gateType").value;
+                                var outputOR;
+
+                                switch(org)
+                                {
+                                    case "or":
+                                        outputOR = (ori1 | ori2);
+                                        break;
+                                }
+                                document.getElementById("output").value = outputOR;
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/AND_ANSI_Labelled.svg/180px-AND_ANSI_Labelled.svg.png" alt=""></td>
+                    <td><p style="color:white;">AND Gate</p></td>
+                    <td>
+                        <select class="ip1" id="andinput1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="ip2" id="andinput2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="gtype" id="andgateType">
+                            <option value="and">AND</option>
+                        </select>
+                        <button class="btn" onclick="andGate()">O/P</button>
+                        <input class="op" id="output1">
+                        <script>
+                            function andGate()
+                            {
+                                var andi1 = document.getElementById("andinput1").value;
+                                var andi2 = document.getElementById("andinput2").value;
+                                var and = document.getElementById("andgateType").value;
+                                var outputAND;
+
+                                switch(and)
+                                {
+                                    case "and":
+                                        outputAND = (andi1 & andi2);
+                                        break;
+                                }
+
+                                document.getElementById("output1").value = outputAND;
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/NOR_ANSI_Labelled.svg/180px-NOR_ANSI_Labelled.svg.png" alt=""></td>
+                    <td><p style="color:white;">NOR Gate</p></td>
+                    <td>
+                        <select class="ip1" id="norinput1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="ip2" id="norinput2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="gtype" id="norgateType">
+                            <option value="nor">NOR</option>
+                        </select>
+                        <button class="btn" onclick="norGate()">O/P</button>
+                        <input class="op" id="output2">
+                        <script>
+                            function norGate()
+                            {
+                                var nori1 = document.getElementById("norinput1").value;
+                                var nori2 = document.getElementById("norinput2").value;
+                                var norg = document.getElementById("norgateType").value;
+                                var outputNOR;
+
+                                switch(norg)
+                                {
+                                    case "nor":
+                                        outputNOR = (!(nori1 | nori2)) ? '1' : '0';
+                                        break;
+                                }
+
+                                document.getElementById("output2").value = outputNOR;
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/NAND_ANSI_Labelled.svg/180px-NAND_ANSI_Labelled.svg.png" alt=""></td>
+                    <td><p style="color:white;">NAND Gate</p></td>
+                    <td>
+                        <select class="ip1" id="nandinput1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="ip2" id="nandinput2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="gtype" id="nandgateType">
+                            <option value="nand">NAND</option>
+                        </select>
+                        <button class="btn" onclick="nandGate()">O/P</button>
+                        <input class="op" id="output3">
+                        <script>
+                            function nandGate()
+                            {
+                                var nandi1 = document.getElementById("nandinput1").value;
+                                var nandi2 = document.getElementById("nandinput2").value;
+                                var nandg = document.getElementById("nandgateType").value;
+                                var outputNAND;
+
+                                switch(nandg)
+                                {
+                                    case "nand":
+                                        outputNAND = (!(nandi1 & nandi2)) ? '1' : '0';
+                                        break;
+                                }
+
+                                document.getElementById("output3").value = outputNAND;
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/XOR_ANSI_Labelled.svg/180px-XOR_ANSI_Labelled.svg.png" alt=""></td>
+                    <td><p style="color:white;">XOR Gate</p></td>
+                    <td>
+                        <select class="ip1" id="xorinput1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="ip2" id="xorinput2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="gtype" id="xorgateType">
+                            <option value="xor">XOR</option>
+                        </select>
+                        <button class="btn" onclick="xorGate()">O/P</button>
+                        <input class="op" id="output4">
+                        <script>
+                            function xorGate()
+                            {
+                                var xori1 = document.getElementById("xorinput1").value;
+                                var xori2 = document.getElementById("xorinput2").value;
+                                var xorg = document.getElementById("xorgateType").value;
+                                var outputXOR;
+
+                                switch(xorg)
+                                {
+                                    case "xor":
+                                        outputXOR = ((xori1 & !xori2) | (!xori1 & xori2)) ? '1' : '0';
+                                        break;
+                                }
+
+                                document.getElementById("output4").value = outputXOR;
+                            }
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/NOT_ANSI_Labelled.svg/180px-NOT_ANSI_Labelled.svg.png" alt=""></td>
+                    <td><p style="color:white;">NOT Gate</p></td>
+                    <td>
+                        <select class="ip1" id="notinput1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="ip2" id="notinput2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select class="gtype" id="notgateType">
+                            <option value="not">NOT</option>
+                        </select>
+                        <button class="btn" onclick="notGate()">O/P</button>
+                        <input class="op" id="output5">
+                        <script>
+                            function notGate()
+                            {
+                                var noti1 = document.getElementById("notinput1").value;
+                                var noti2 = document.getElementById("notinput2").value;
+                                var notg = document.getElementById("notgateType").value;
+                                var outputNOT;
+
+                                switch(notg)
+                                {
+                                    case "not":
+                                        outputNOT = !(noti1 | noti2) ? '1' : '0';
+                                        break;
+                                }
+
+                                document.getElementById("output5").value = outputNOT;
+                            }
+                        </script>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </body>
 {% endblock %}
 
 
