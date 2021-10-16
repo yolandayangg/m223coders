@@ -20,6 +20,10 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
 
 <h1>Week 7</h1>
 
+[Week 7 video](https://www.youtube.com/watch?v=X28wPS4vO10&feature=youtu.be)
+
+[Week 7 Review Ticket](https://github.com/yolandayangg/flask_portfolio/issues/56)
+
 [1. Multiply/divide by 2/shift](https://github.com/yolandayangg/flask_portfolio/issues/48)
 
 [2. Extend/switch ASCII to unicode](https://github.com/yolandayangg/flask_portfolio/issues/52)
