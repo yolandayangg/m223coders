@@ -24,6 +24,8 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
 
 [Week 7 Review Ticket](https://github.com/yolandayangg/flask_portfolio/issues/56)
 
+[Week 7 Review Ticket](https://github.com/yolandayangg/flask_portfolio/issues/56)
+
 [1. Multiply/divide by 2/shift](https://github.com/yolandayangg/flask_portfolio/issues/48)
 
 [2. Extend/switch ASCII to unicode](https://github.com/yolandayangg/flask_portfolio/issues/52)
