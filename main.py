@@ -26,7 +26,7 @@ def binary():
 
 # connects /kangaroos path to render reviews.html
 
-@app.route('/yolanda', methods=['GET', 'POST'])
+@app.route('/yolanda/', methods=['GET', 'POST'])
 def yolanda():
     # submit button has been pushed
     print("1")
@@ -95,6 +95,10 @@ def unsignedaddition():
 @app.route('/logicgates/', methods=['GET', 'POST'])
 def logicgates():
     return render_template("layouts/logicgates.html")
+
+@app.route('/favorbooks/', methods=['GET', 'POST'])
+def favorbooks():
+    return render_template("layouts/favorbooks.html")
 
 @app.route('/stanley/', methods=['GET', 'POST'])
 def stanley():
