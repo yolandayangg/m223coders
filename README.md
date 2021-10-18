@@ -18,6 +18,20 @@ Stanley Yan (user Stanley Yan) [Tasks](https://github.com/yolandayangg/flask_por
 
 Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/flask_portfolio/issues) [Commits](https://github.com/yolandayangg/flask_portfolio/commits?author=TheRadRabbidRabbit) [Profile](https://github.com/TheRadRabbidRabbit) [Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1?card_filter_query=assignee%3Atheradrabbidrabbit)
 
+<h1>Week 8</h1>
+
+[Week 8 Review Ticket](https://github.com/yolandayangg/m223coders/issues/10)
+
+[1. Fix Discussion board](https://github.com/yolandayangg/m223coders/issues/5)
+
+[2. Implement new background colors](https://github.com/yolandayangg/m223coders/issues/8)
+
+[3. Our favorite books](https://github.com/yolandayangg/m223coders/issues/7)
+
+[4. Random book generator](https://github.com/yolandayangg/m223coders/issues/6)
+
+[5. Font theme for website](https://github.com/yolandayangg/m223coders/issues/3)
+
 <h1>Week 7</h1>
 
 [Week 7 video](https://www.youtube.com/watch?v=X28wPS4vO10&feature=youtu.be)
