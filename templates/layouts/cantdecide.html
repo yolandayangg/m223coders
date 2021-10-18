@@ -1,0 +1,102 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Stubby" %}
+
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <!- Try building a new body here ->
+    </div>
+    <div class="col-12">
+        <label for="name"><h2 style="font-family:'Courier New'">Click the button to display a random number between 1 and 10.</h2></label>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+                var x = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
+        </form>
+    </div>
+    </div>
+
+    <html>
+    <style>
+        table, th, td {
+            border:1px solid black;
+        }
+    </style>
+    <body>
+
+    <table style="width:100%">
+        <tr>
+            <th>Number</th>
+            <th>Book</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>#1</td>
+            <td><img width="175" height="275" src= "/static/assets/mockingbird.jpg" alt=""></td>
+            <td><p style="font-family:'Courier New'"> To Kill a Mockingbird is a novel by Harper Lee. ... Many residents of Maycomb are racists and during the novel Atticus is asked to defend Tom Robinson, a black man wrongly accused of raping a white woman. Atticus takes on the case even though everyone knows he has little hope of winning. </p></td>
+        </tr>
+        <tr>
+            <td>#2</td>
+            <td><img width="175" height="275" src= "/static/assets/greatexpectations.jpeg" alt=""></td>
+            <td><p style="font-family:'Courier New'">Great Expectations follows the childhood and young adult years of Pip a blacksmith's apprentice in a country village. He suddenly comes into a large fortune (his great expectations) from a mysterious benefactor and moves to London where he enters high society.</p></td>
+        </tr>
+        <tr>
+            <td>#3</td>
+            <td><img width="175" height="275" src= "/static/assets/thehungergames.jpeg" alt=""></td>
+            <td><p style="font-family:'Courier New'">The Hunger Games is an annual event in which one boy and one girl aged 12–18 from each of the twelve districts surrounding the Capitol are selected by lottery to compete in a televised battle royale to the death. </p></td>
+        </tr>
+        <tr>
+            <td>#4</td>
+            <td><img width="175" height="275" src= "/static/assets/sunisalsoastar.jpeg" alt=""></td>
+            <td><p style="font-family:'Courier New'">The Sun Is Also a Star tells the story of Natasha (Yara Shahidi) and Daniel (Charles Melton) — two teens who meet through a twist of fate and then, of course, fall in love. The film and the novel tackle more than young love though. Yoon grew up in Brooklyn. </p></td>
+        </tr>
+        <tr>
+            <td>#5</td>
+            <td><img width="175" height="275" src= "/static/assets/catcher.jpeg" alt=""></td>
+            <td><p style="font-family:'Courier New'">The Catcher in the Rye, novel by J.D. Salinger published in 1951. The novel details two days in the life of 16-year-old Holden Caulfield after he has been expelled from prep school. Confused and disillusioned, Holden searches for truth and rails against the “phoniness” of the adult world. </p></td>
+        </tr>
+        <tr>
+            <td>#6</td>
+            <td><img width="175" height="275" src= "/static/assets/doctorsthink.jpeg" alt=""></td>
+            <td><p style="font-family:'Courier New'">In How Doctors Think, Jerome Groopman explores clinical decision making with a particular emphasis on the poor communication skills and cognitive errors that often lead to misdiagnosis and inappropriate treatment. </p></td>
+        </tr>
+        <tr>
+            <td>#7</td>
+            <td><img width="175" height="275" src= "/static/assets/wimpykid.jpeg" alt=""></td>
+            <td><p style="font-family:'Courier New'">Greg Heffley must survive middle school while dealing with his two annoying brothers Manny and Rodrick. At least he has his best friend, Rowley Jefferson, but his behavior can be intolerable, so the friendship may not last </p></td>
+        </tr>
+        <tr>
+            <td>#8</td>
+            <td><img width="175" height="275" src= "/static/assets/wimpykid.jpeg" alt=""></td>
+            <td><p style="font-family:'Courier New'">Greg Heffley must survive middle school while dealing with his two annoying brothers Manny and Rodrick. At least he has his best friend, Rowley Jefferson, but his behavior can be intolerable, so the friendship may not last. </p></td>
+        </tr>
+        <tr>
+            <td>#9</td>
+            <td><img width="175" height="275" src= "/static/assets/parable.jpeg" alt=""></td>
+            <td><p style="font-family:'Courier New'">It is an apocalypse science fiction novel that provides commentary on climate change and social inequality. The novel follows Lauren Olamina in her quest for freedom. Several characters from various walks of life join her on her journey north and learn of a religion she has crafted titled Earthseed.</p></td>
+        </tr>
+        <tr>
+            <td>#10</td>
+            <td><img width="175" height="275" src= "/static/assets/silverview.jpeg" alt=""></td>
+            <td><p style="font-family:'Courier New'">Silverview is the mesmerizing story of an encounter between innocence and experience and between public duty and private morals. In his inimitable voice John le Carré, the greatest chronicler of our age, seeks to answer the question of what we truly owe to the people we love. </p></td>
+        </tr>
+    </table>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+    <style>
+        body {
+            background-image: repeating-linear-gradient(to bottom right, saddlebrown, sandybrown, tan, rgb(255, 122, 89));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+{% endblock %}

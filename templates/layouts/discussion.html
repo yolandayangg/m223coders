@@ -8,32 +8,164 @@
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
     <!- Try building a new body here ->
-    <h2> Have something to add?</h2>
-
-    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
-        <div class="col-12">
-            <p>Hello, {{name1}}!</p>
+    <body>
+    <div class="top-bar">
+        <h1>
+            Discussion:
+        </h1>
+    </div>
+    <div class="main">
+        <div class="header">
         </div>
-        <div class="col-12">
-            <form action="/discussion" id="greet" method="POST" >
-                <label for="name">Have something to add?</label>
-                <input name="name" id="name">
-                <input type="submit" value="Reply!">
-            </form>
-        </div>
-        <div class="col-12">
-            <img src="background.jpg" style="height: 400px" alt="">
+        <textarea></textarea>
+        <button>Add Comment</button>
+        <div class="comments">
         </div>
     </div>
+    <script src="data.js"></script>
+    <script>
+        var id = window.location.search.slice(1);
+        var thread = threads.find(t => t.id == id);
+        var header = document.querySelector('.header');
+        var headerHtml = `
+            <h4 class="title">
+                ${thread.title}
+            </h4>
+            <div class="bottom">
+                <p class="timestamp">
+                    ${new Date(thread.date).toLocaleString()}
+                </p>
+                <p class="comment-count">
+                    ${thread.comments.length} comments
+                </p>
+            </div>
+        `
+        header.insertAdjacentHTML('beforeend', headerHtml)
+
+        function addComment(comment) {
+            var commentHtml = `
+                <div class="comment">
+                    <div class="top-comment">
+                        <p class="user">
+                            ${comment.author}
+                        </p>
+                        <p class="comment-ts">
+                            ${new Date(comment.date).toLocaleString()}
+                        </p>
+                    </div>
+                    <div class="comment-content">
+                        ${comment.content}
+                    </div>
+                </div>
+            `
+            comments.insertAdjacentHTML('beforeend', commentHtml);
+        }
+
+        var comments = document.querySelector('.comments');
+        for (let comment of thread.comments) {
+            addComment(comment);
+        }
+
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function() {
+            var txt = document.querySelector('textarea');
+            var comment = {
+                content: txt.value,
+                date: Date.now(),
+                author: 'Aaron'
+            }
+            addComment(comment);
+            txt.value = '';
+            thread.comments.push(comment);
+            localStorage.setItem('threads', JSON.stringify(threads));
+        })
+    </script>
+    <script>
+        console.log(threads);
+        var container = document.querySelector('ol');
+        for (let thread of threads) {
+            var html = `
+            <li class="row">
+                <a href="/thread.html?${thread.id}">
+                    <h4 class="title">
+                        ${thread.title}
+                    </h4>
+                    <div class="bottom">
+                        <p class="timestamp">
+                            ${new Date(thread.date).toLocaleString()}
+                        </p>
+                        <p class="comment-count">
+                            ${thread.comments.length} comments
+                        </p>
+                    </div>
+                </a>
+            </li>
+            `
+            container.insertAdjacentHTML('beforeend', html);
+        }
+    </script>
+    <style>
+        body {
+            margin: 10px 60px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        h1, h4, ol {
+            margin: 0;
+        }
+        p {
+            margin: 5px 0;
+        }
+        textarea {
+            width: 80%;
+            height: 80px;
+        }
+        button {
+            display: block;
+            margin: 10px 0;
+        }
+        .top-bar {
+            background-color: skyblue;
+            padding: 0 40px;
+        }
+        .main {
+            background-color: #F6F6EF;
+            padding: 10px 40px;
+        }
+        .comments {
+            margin: 40px 0;
+        }
+        .comment {
+            margin: 10px 0;
+        }
+        .row {
+            padding: 5px 0;
+        }
+        .bottom, .top-comment {
+            display: flex;
+            color: grey;
+            font-size: 12px;
+        }
+        .timestamp {
+            padding-right: 10px;
+        }
+        .comment-ts {
+            padding-left: 10px;
+        }
+    </style>
+    </body>
+
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
 {% block background %}
-<style>
-    body {
-        background-image: repeating-linear-gradient(to bottom right, black, whitesmoke, blanchedalmond, rgb(255, 122, 89));
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-    }
+    <style>
+        body {
+            background-image: repeating-linear-gradient(to bottom right, saddlebrown, sandybrown, tan, rgb(255, 122, 89));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
 {% endblock %}

@@ -128,20 +128,19 @@ def tianbin():
 
 @app.route('/justin/', methods=['GET', 'POST'])
 def justin():
-    # submit button has been pushed
-    print("1")
-    if request.form:
-        print("2")
-        name = request.form.get("name")
-        if len(name) != 0:  # input field has content
-            print("3")
-            return render_template("layouts/justin.html", name1=name)
-    # starting and empty input default
     return render_template("layouts/justin.html", name1="World")
 
 @app.route('/listdictionary/', methods=['GET', 'POST'])
 def listdictionary():
     return render_template("layouts/unicode.html")
+
+@app.route('/joke/', methods=['GET', 'POST'])
+def joke():
+    return render_template("layouts/joke.html")
+
+@app.route('/cantdecide/', methods=['GET', 'POST'])
+def cantdecide():
+    return render_template("layouts/cantdecide.html")
 
 # runs the application on the development server
 if __name__ == "__main__":

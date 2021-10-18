@@ -1,58 +1,36 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="https://csp.nighthawkcodingsociety.com/"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-            <a class="nav-link" href=/>Portfolio</a>
-            <a class="nav-link" href=/popularnow/>Popular Now</a>
-            <a class="nav-link" href=/discussion/>Discuss With Us</a>
-            <a class="nav-link" href=/reviews/>Reviews From Others</a>
-            <a class="nav-link" href=/questions/>Questions?</a>
-            <a class="nav-link" href=/favorbooks/>Favorite Books?</a>
-            <!-- stub is shown using the name of the route -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarModel" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Concepts
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/yolanda">Yolanda</a>
-                    <a class="dropdown-item" href="/stanley">Stanley</a>
-                    <a class="dropdown-item" href="/tianbin">Tianbin</a>
-                    <a class="dropdown-item" href="/justin">Justin</a>
-                    <a class="dropdown-item" href="/binary">Binary</a>
-                    <a class="dropdown-item" href="/rgb">RGB</a>
-                    <a class="dropdown-item" href="/logicgates">Logic gates</a>
-                    <a class="dropdown-item" href="/unicode">Unicode</a>
-                    <a class="dropdown-item" href="/signedaddition">Signed Addition</a>
-                    <a class="dropdown-item" href="/unsignedaddition">Unsigned Addition</a>
-                </div>
-            </li>
-        </div>
-    </div>
-</nav>
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
 
-<span style="color: #000000; "><h1 style="text-align: center">!Favorite Books!</h1>
-<a href="https://www.readanybook.com/online/634176" target="-blank" title="Harry potter">
+<!- This variable sets name of browser tab  -->
+{% set project = "Stubby" %}
+
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <body style="color: #000000; "><h1 style="text-align: center">Favorite Books By Us!</h1>
+    <a href="https://www.readanybook.com/online/634176" target="-blank" title="Harry potter">
     <h2>Harry Potter and the Philosopher's Stone</h2>
-    <img src="/static/assets/favorbook/Harry%20Potter%20and%20the%20Philosopher's%20Stone.gif"
-         width="250"
-         height="325"
-         alt=""/>
 </a>
-</body>
+    </body>
+    <td>
 
+        <img id="mountainImage" class="img-responsive py-3" src="/static/assets/favorbook/Harry%20Potter%20and%20the%20Philosopher's%20Stone.gif" alt="" width="256" height="Auto">
+        <button onclick="myFunction()">Grayscale</button><br><br>
+        <script>
+            function myFunction() {
+                document.getElementById("mountainImage").style.filter = "grayscale(100%)";
+            }
+        </script>
+    </td>
+{% endblock %}
 
+<!- This is turning off birds background from base.html -->
 {% block background %}
-
+    <style>
+        body {
+            background-image: repeating-linear-gradient(to bottom right, firebrick, yellowgreen, cadetblue, rgb(255, 122, 89));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
 {% endblock %}
