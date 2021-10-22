@@ -8,6 +8,7 @@
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
     <body style="color: #000000; "><h1 style="text-align: center">Favorite Books By Us!</h1>
+    <button onClick="window.location.reload();">Revert</button>
     <a href="https://www.readanybook.com/online/634176" target="-blank" title="Harry potter">
     <h2>Harry Potter and the Philosopher's Stone</h2>
 </a>
@@ -22,13 +23,74 @@
             }
         </script>
     </td>
+
+<a href="https://www.readanybook.com/online/17#356886" target="-blank" title="The Hobbit">
+    <h2>The Hobbit</h2>
+</a>
+
+<td>
+
+    <img id="thehobbit" class="img-responsive py-3" src="/static/assets/favorbook/The%20Hobbit.gif" alt="" width="256" height="Auto">
+    <button onclick="myFunction2()">Grayscale</button><br><br>
+    <script>
+        function myFunction2() {
+            document.getElementById("thehobbit").style.filter = "grayscale(100%)";
+        }
+    </script>
+</td>
+
+<a href="https://www.readanybook.com/online/571944#389227" target="-blank" title="The Lord of the Rings">
+    <h2>The Lord of the Rings</h2>
+</a>
+
+<td>
+
+    <img id="thelordoftherings" class="img-responsive py-3" src="/static/assets/favorbook/The%20Lord%20of%20the%20Rings.gif" alt="" width="256" height="Auto">
+    <button onclick="myFunction3()">Grayscale</button><br><br>
+    <script>
+        function myFunction3() {
+            document.getElementById("thelordoftherings").style.filter = "grayscale(100%)";
+        }
+    </script>
+</td>
+
+<a href="https://novels80.com/the-hunger-games/chapter-one-136042.html" target="-blank" title="Hunger game">
+    <h2>Hunger game</h2>
+</a>
+
+<td>
+
+    <img id="hungergame" class="img-responsive py-3" src="/static/assets/favorbook/Hunger%20game.gif" alt="" width="256" height="Auto">
+    <button onclick="myFunction4()">Grayscale</button><br><br>
+    <script>
+        function myFunction4() {
+            document.getElementById("hungergame").style.filter = "grayscale(100%)";
+        }
+    </script>
+</td>
+
+
+<a href="https://www.readanybook.com/online/636413" target="-blank" title="Sherlock Holmes">
+    <h2>The Adventures and Memoirs of Sherlock Holmes</h2>
+</a>
+
+<td>
+
+    <img id="sherlockholmes" class="img-responsive py-3" src="/static/assets/favorbook/The%20Adventures%20and%20Memoirs%20of%20Sherlock%20Holmes.gif" alt="" width="256" height="Auto">
+    <button onclick="myFunction5()">Grayscale</button><br><br>
+    <script>
+        function myFunction5() {
+            document.getElementById("sherlockholmes").style.filter = "grayscale(100%)";
+        }
+    </script>
+</td>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
 {% block background %}
     <style>
         body {
-            background-image: repeating-linear-gradient(to bottom right, firebrick, yellowgreen, cadetblue, rgb(255, 122, 89));
+            background-image: repeating-linear-gradient(to bottom right, #22b2ad, #325ecd, #635fa0, rgb(144, 89, 255));
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
