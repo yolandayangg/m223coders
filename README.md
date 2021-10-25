@@ -18,6 +18,15 @@ Stanley Yan (user Stanley Yan) [Tasks](https://github.com/yolandayangg/flask_por
 
 Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/flask_portfolio/issues) [Commits](https://github.com/yolandayangg/flask_portfolio/commits?author=TheRadRabbidRabbit) [Profile](https://github.com/TheRadRabbidRabbit) [Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1?card_filter_query=assignee%3Atheradrabbidrabbit)
 
+<h1>Week 9</h1>
+[1. Yolanda week 9 review video/ticket](https://github.com/yolandayangg/m223coders/issues/15)
+
+[2. Stanley week 9 review video/ticket](https://github.com/yolandayangg/m223coders/issues/16)
+
+[3. Tianbin week 9 review video/ticket](https://github.com/yolandayangg/m223coders/issues/14)
+
+[4. Justin week 9 review video/ticket](https://github.com/yolandayangg/m223coders/issues/17)
+
 <h1>Week 8</h1>
 
 [Week 8 Review Ticket](https://github.com/yolandayangg/m223coders/issues/10)
