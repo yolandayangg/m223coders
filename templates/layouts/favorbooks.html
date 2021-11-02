@@ -9,6 +9,25 @@
 {% block body %}
     <body style="color: #000000; "><h1 style="text-align: center">Favorite Books By Us!</h1>
     <button onClick="window.location.reload();">Revert</button>
+    <button onclick="myfavorbook()">Random Book Name</button>
+    <p id="favorDisplay"></p>
+    <script>
+        var favor = [
+            'Harry Potter and the Philosophers Stone',
+            'The Hobbit',
+            'The Lord of the Rings',
+            'The Hunger Game: Catching Fire',
+            'The Adventures and Memoirs of Sherlock Holmes',
+            'Hint: If you dont see any favorite book that you like, you can go to Reviews From Others tab and search your own book!',
+            'Hint: If you still cant decide, you can go to Cant Decide tab!'
+        ]
+
+        function myfavorbook() {
+            var x = Math.floor(Math.random() * (favor.length));
+            document.getElementById('favorDisplay').innerHTML = favor[x];
+        }
+    </script>
+
     <a href="https://www.readanybook.com/online/634176" target="-blank" title="Harry potter">
     <h2>Harry Potter and the Philosopher's Stone</h2>
 </a>
@@ -58,7 +77,7 @@
 
 
 <a href="https://novels80.com/the-hunger-games/chapter-one-136042.html" target="-blank" title="Hunger game">
-    <h2>Hunger game</h2>
+    <h2>The Hunger Game: Catching Fire</h2>
 </a>
 
 <td>
