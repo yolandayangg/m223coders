@@ -1,4 +1,6 @@
-Objectives for the week: Create code for all the mini labs and make a new tab for each one under the dropdown menu. Add rows for signed/unsigned addition, buttons to shift left and right, 3 rows of bits for rgb, table for logic gates with input, gate, and output, replace ascii with unicode.
+<h1>Welcome to our website!</h1>
+<h2>Nighthawk Book Suggestions: The latest forum for DNHS students to discover new books and share their favorites with others!<h2/>
+
 <h1>Pop quiz 9/10</h1>
 <h2>P3 M223-Coders Yolanda Yang, Stanley Yan, Tianbin Liu, Justin Lemay</h2>
 
@@ -18,6 +20,18 @@ Stanley Yan (user Stanley Yan) [Tasks](https://github.com/yolandayangg/flask_por
 
 Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/flask_portfolio/issues) [Commits](https://github.com/yolandayangg/flask_portfolio/commits?author=TheRadRabbidRabbit) [Profile](https://github.com/TheRadRabbidRabbit) [Scrumboard](https://github.com/yolandayangg/flask_portfolio/projects/1?card_filter_query=assignee%3Atheradrabbidrabbit)
 
+  <h1>Week 10</h1>
+ 
+  [1.Update button to head back to previous tab](https://github.com/yolandayangg/m223coders/issues/20)
+  
+  [2.Establish theme and change fonts](https://github.com/yolandayangg/m223coders/issues/19)
+  
+  [3.CSS style page](https://github.com/yolandayangg/m223coders/issues/21)
+  
+  [4.Remove white background in image](https://github.com/yolandayangg/m223coders/issues/22)
+  
+  [5.](
+  
 <h1>Week 9</h1>
 
 [1. Yolanda week 9 review video/ticket](https://github.com/yolandayangg/m223coders/issues/15)
@@ -43,6 +57,8 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
 [5. Font theme for website](https://github.com/yolandayangg/m223coders/issues/3)
 
 <h1>Week 7</h1>
+
+Objectives for the week: Create code for all the mini labs and make a new tab for each one under the dropdown menu. Add rows for signed/unsigned addition, buttons to shift left and right, 3 rows of bits for rgb, table for logic gates with input, gate, and output, replace ascii with unicode.
 
 [Week 7 video](https://www.youtube.com/watch?v=X28wPS4vO10&feature=youtu.be)
 
