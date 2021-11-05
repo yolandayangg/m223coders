@@ -30,7 +30,9 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
   
   [4.Remove white background in image](https://github.com/yolandayangg/m223coders/issues/22)
   
-  [5.](
+  [5.Preview system for each book](https://github.com/yolandayangg/m223coders/issues/13)
+  
+  [6.Styling CSS and incorporating a more solid theme)
   
 <h1>Week 9</h1>
 
