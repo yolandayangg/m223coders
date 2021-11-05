@@ -32,7 +32,7 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
   
   [5.Preview system for each book](https://github.com/yolandayangg/m223coders/issues/13)
   
-  [6.Styling CSS and incorporating a more solid theme)
+  [6.Styling CSS and incorporating a more solid theme](https://github.com/yolandayangg/m223coders/issues/12)
   
 <h1>Week 9</h1>
 
