@@ -10,6 +10,17 @@
     --grey: grey;
 }
 
+html, body{
+    margin: 0;
+    height: 100%;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    background-color: var(--purple);
+    color: var(--black);
+}
+
 .dark-mode {
     background-color: var(--white);
     color: var(--black);
