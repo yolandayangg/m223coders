@@ -1,5 +1,11 @@
 <h1>Welcome to our website!</h1>
 <h2>Nighthawk Book Suggestions: The latest forum for DNHS students to discover new books and share their favorites with others!<h2/>
+  
+  <h2>Project Purpose</h2>
+    <h3>The purpose of our project is to assist students or other readers in ifnding a new interesting book. Our website has lists for people to choose from, with a brief summary, as well as a button for people to read mroe if they are interested. Users can rate books and talk about books as well if they enjoyed a certain read. We also provide links to useful outside sources that can help people find new books, or where to find books they want to read.</h3>
+     
+  <h2>Project History </h2>
+     <h3>Everything from our commits, journals, videos, and tasks can be found in the READme box below. At the very bottom will be the first weeks, and the top being the most recent. On the very top, you can also find more details about our individual contributions and tasks beyond simple coding. Our journals are a great way to learn about the details for each day as well as AP exam preparation material.</h3>
 
 <h1>Pop quiz 9/10</h1>
 <h2>P3 M223-Coders Yolanda Yang, Stanley Yan, Tianbin Liu, Justin Lemay</h2>
@@ -32,7 +38,7 @@ Justin Lemay (user TheRadRabbidRabbit) [Tasks](https://github.com/TianbinLiu/fla
   
   [5.Preview system for each book](https://github.com/yolandayangg/m223coders/issues/13)
   
-  [6.Styling CSS and incorporating a more solid theme](https://github.com/yolandayangg/m223coders/issues/12)
+  [6.Styling CSS and incorporating a more solid theme)
   
 <h1>Week 9</h1>
 
