@@ -1,6 +1,36 @@
 <h1>Welcome to our website!</h1>
 <h2>Nighthawk Book Suggestions: The latest forum for DNHS students to discover new books and share their favorites with others!<h2/>
   
+  <h1>Reflection/Retrospective</h1>
+  <h3>What went well?</h3>
+  
+Completing all assignments and finding times outside of school to work together if we couldn’t find time to do it in class. Generally, the majority of our group maintained reliable communication, which allowed us to efficiently get work done and finish with time to spare. Also, as long as a task is assigned, most members of the team tried our best to get the task done, even when it means asking for help and assistance from the teachers or other classmates.
+
+  <h3>What didn't go that well?</h3>
+  
+Sometimes we would have trouble working as a team and collaborating and would kind of do our own thing. If we communicated with each other more often, then we probably could have completed tasks quicker and more in depth. We also could have asked more questions to the teacher as well as other groups. In the future, one of our goals is to have better communication in class. Although we were able to have steady communication, we definitely did not maintain frequent conversations. This would lead to troubles with the code (committs and pushes) and backtrack our progress. 
+  
+  <h3>What did every team member learn?</h3>
+  
+Yolanda: I learned that it's important to be patient and keep on trying. There are many times where a code I wrote didn't work the first time, and I would have to then re-read every line and every letter to find out what went wrong. Often, that meant many re-runs and hours spent on one code. Also, I recognized that it's important to hold teammates accountable. Sometimes, I would pick up the slack of those who aren't doing their work, which proved costly to my other academic classes. Next trimester, one of my goals is to make sure that everyone gets their work done in a timely manner.
+  
+Stanley: I learned that not everything can be accomplished on the first try, but if you keep workign towards it eventually you can figure it out. For example, when I was working on the binary lab for greyscale, I tried many different methods for a long time to make a button, and for a long time I couldn't figure it out. However, after looking online and seekign help, I was finally able to finisih it.
+  
+Tianbin: I learned something about the coding and also I learned that it is nessesary to try the thing what we learned, and never give up. It is also important to ask if we have some troubles about coding. And also It is important to work together as a team. Comunication is important and also nessesary. 
+  
+Justin:
+  Throughout the course of this class we've learned many things. For example, I've learned how to do loops, if else commands, and much more. All of these topics are very useful topics to go over when in a coding class. Without these skills I don't believe I would be able to do coding at all.
+  <h3>What puzzles every team member?</h3>
+  
+Yolanda: Something that puzzles me is the future of this course. For the next trimester, will we be building another website, or will we have a heavier focus on the AP exam? As the exam nears, it would make more sense to dedicate more time in class to make sure that everyone can pass the AP exam with 4's and 5's
+  
+Stanley: I am puzzled about how to deploy our website using rasberry pi or the amazon thing. I wonder how we will keep our website running online, and if there will be any maintainence and changes that we make in the future.
+  
+Tianbin: For me, I puzzled about what we will learn on the next trimester, I know that I still have a lot need to learn, and also I have some questions about the coding and how to finshish my idea about our website.
+  
+Justin: In this class there were many things that puzzled me. I worked hard to overcome them and for the most part I did. But one of the most challenging things for me was trying to understand the RGB topics. Implementing images and changing the hues and shades on them was very difficult for me to understand.
+
+  
   <h1>Capture N@tM</h1>
   
 ![IMG_4952](https://user-images.githubusercontent.com/89219568/141513040-9a412ba0-fddb-4047-a74a-7bdc09f2c86b.jpg)
