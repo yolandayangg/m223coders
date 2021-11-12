@@ -1,6 +1,34 @@
 <h1>Welcome to our website!</h1>
 <h2>Nighthawk Book Suggestions: The latest forum for DNHS students to discover new books and share their favorites with others!<h2/>
   
+<h2>Project Purpose</h2>
+    <h3>The purpose of our project is to assist students or other readers in ifnding a new interesting book. Our website has lists for people to choose from, with a brief summary, as well as a button for people to read mroe if they are interested. Users can rate books and talk about books as well if they enjoyed a certain read. We also provide links to useful outside sources that can help people find new books, or where to find books they want to read.</h3>
+     
+  <h2>Project History </h2>
+     <h3>Everything from our commits, journals, videos, and tasks can be found in the READme box below. At the very bottom will be the first weeks, and the top being the most recent. On the very top, you can also find more details about our individual contributions and tasks beyond simple coding. Our journals are a great way to learn about the details for each day as well as AP exam preparation material.</h3>
+
+  <h1>Table of Contents</h1>
+  
+  [1. Week 3 Progress](https://github.com/yolandayangg/m223coders#week-3-progress)
+  
+  [2. Week 4 Progress](https://github.com/yolandayangg/m223coders#week-4-progress)
+  
+  [3. Week 5 Progress](https://github.com/yolandayangg/m223coders#week-5-progress)
+  
+  [4. Week 6 Progress](https://github.com/yolandayangg/m223coders#week-6-progress)
+  
+  [5. Week 7 Progress](https://github.com/yolandayangg/m223coders#week-7)
+  
+  [6. Week 8 Progress](https://github.com/yolandayangg/m223coders#week-8)
+  
+  [7. Week 9 Progress](https://github.com/yolandayangg/m223coders#week-9)
+  
+  [8. Week 10 Progress](https://github.com/yolandayangg/m223coders#week-10)
+  
+  [9. Project history/progress](https://github.com/yolandayangg/m223coders#project-purpose)
+  
+  [10. Pop Quiz](https://github.com/yolandayangg/m223coders#pop-quiz-910)
+  
   <h1>Reflection/Retrospective</h1>
   <h3>What went well?</h3>
   
@@ -40,12 +68,8 @@ Justin: In this class there were many things that puzzled me. I worked hard to o
 ![IMG_4955](https://user-images.githubusercontent.com/89219568/141513281-1f06480e-a1cd-43bc-9bec-72acbd180fde.jpg)
   
 ![IMG_4959](https://user-images.githubusercontent.com/89219568/141513594-c0085b7e-74a9-4a49-967e-6afcc6d2f7d7.jpg)
-
-  <h2>Project Purpose</h2>
-    <h3>The purpose of our project is to assist students or other readers in ifnding a new interesting book. Our website has lists for people to choose from, with a brief summary, as well as a button for people to read mroe if they are interested. Users can rate books and talk about books as well if they enjoyed a certain read. We also provide links to useful outside sources that can help people find new books, or where to find books they want to read.</h3>
-     
-  <h2>Project History </h2>
-     <h3>Everything from our commits, journals, videos, and tasks can be found in the READme box below. At the very bottom will be the first weeks, and the top being the most recent. On the very top, you can also find more details about our individual contributions and tasks beyond simple coding. Our journals are a great way to learn about the details for each day as well as AP exam preparation material.</h3>
+  
+![image](https://user-images.githubusercontent.com/89219568/141517093-e6127094-a296-4f19-9609-c78d7ffc2f9d.png)
 
 <h1>Pop quiz 9/10</h1>
 <h2>P3 M223-Coders Yolanda Yang, Stanley Yan, Tianbin Liu, Justin Lemay</h2>
